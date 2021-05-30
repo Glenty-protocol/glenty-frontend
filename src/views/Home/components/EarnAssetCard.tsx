@@ -8,7 +8,9 @@ import { Pool } from 'state/types'
 import { useTranslation } from 'contexts/Localization'
 
 const StyledFarmStakingCard = styled(Card)`
-  background: linear-gradient(#53dee9, #7645d9);
+  background: linear-gradient(
+    262deg
+    , rgba(49, 39, 131, 0.95),60%, rgba(49, 39, 131, 0.1));
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -26,10 +28,10 @@ const CardMidContent = styled(Heading).attrs({ scale: 'xl' })`
   line-height: 44px;
 `
 
-const activeNonCakePools = pools.filter((pool) => !pool.isFinished && !pool.earningToken.symbol.includes('CAKE'))
+const activeNonCakePools = pools.filter((pool) => !pool.isFinished && !pool.earningToken.symbol.includes('GLENTY'))
 const latestPools: Pool[] = orderBy(activeNonCakePools, ['sortOrder', 'pid'], ['desc', 'desc']).slice(0, 3)
-// Always include CAKE
-const assets = ['CAKE', ...latestPools.map((pool) => pool.earningToken.symbol)].join(', ')
+// Always include GLENTY
+const assets = ['GLENTY', ...latestPools.map((pool) => pool.earningToken.symbol)].join(', ')
 
 const EarnAssetCard = () => {
   const { t } = useTranslation()
@@ -41,12 +43,12 @@ const EarnAssetCard = () => {
       <NavLink exact activeClassName="active" to="/syrup" id="pool-cta">
         <CardBody>
           <Heading color="contrast" scale="lg">
-            {earn}
+          <div style={{ color: 'white' }}>{earn}</div>
           </Heading>
-          <CardMidContent color="invertedContrast">{assets}</CardMidContent>
+          <CardMidContent color="invertedContrast"> <div style={{ color: '#F3BA2F' }}>{assets}</div></CardMidContent>
           <Flex justifyContent="space-between">
             <Heading color="contrast" scale="lg">
-              {InPools}
+            <div style={{ color: 'white' }}> {InPools}</div>
             </Heading>
             <ArrowForwardIcon mt={30} color="primary" />
           </Flex>

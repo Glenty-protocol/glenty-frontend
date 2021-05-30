@@ -74,18 +74,18 @@ const EarnAPRCard = () => {
       <NavLink exact activeClassName="active" to="/farms" id="farm-apr-cta">
         <CardBody>
           <Heading color="contrast" scale="lg">
-            {earnUpTo}
+            <div style={{ color: 'white' }}> {earnUpTo}</div>
           </Heading>
           <CardMidContent color="#7645d9">
-            {highestApr && !isFetchingFarmData ? (
+          <div style={{ color: '#F3BA2F' }}>{highestApr && !isFetchingFarmData ? (
               `${highestApr}%`
             ) : (
               <Skeleton animation="pulse" variant="rect" height="44px" />
-            )}
+            )} </div>
           </CardMidContent>
           <Flex justifyContent="space-between">
             <Heading color="contrast" scale="lg">
-              {InFarms}
+              <div style={{ color: 'white' }}>  {InFarms}</div>
             </Heading>
             <ArrowForwardIcon mt={30} color="primary" />
           </Flex>

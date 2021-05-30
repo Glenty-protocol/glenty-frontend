@@ -11,9 +11,6 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/cake-bg.svg');
-  background-repeat: no-repeat;
-  background-position: top right;
   min-height: 376px;
 `
 
@@ -60,16 +57,23 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading scale="xl" mb="24px">
-          {t('Farms & Staking')}
+          <div style={{ color: 'white' }}>
+            {t('Farms & Staking')}
+          </div>
+
         </Heading>
         <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>{t('CAKE to Harvest')}:</Label>
-          <CakeHarvestBalance />
+          <div style={{ color: 'white' }}>
+            <Label><div style={{ color: 'white' }}>{t('GLENTY to Harvest')}:</div></Label>
+            <CakeHarvestBalance />
+          </div>
         </Block>
         <Block>
-          <Label>{t('CAKE in Wallet')}:</Label>
-          <CakeWalletBalance />
+          <div style={{ color: 'white' }}>
+            <Label><div style={{ color: 'white' }}>{t('GLENTY in Wallet')}:</div></Label>
+            <CakeWalletBalance />
+          </div>
         </Block>
         <Actions>
           {account ? (
@@ -80,10 +84,10 @@ const FarmedStakingCard = () => {
               width="100%"
             >
               {pendingTx
-                ? t('Collecting CAKE')
+                ? t('Collecting GLENTY')
                 : t('Harvest all (%count%)', {
-                    count: balancesWithValue.length,
-                  })}
+                  count: balancesWithValue.length,
+                })}
             </Button>
           ) : (
             <UnlockButton width="100%" />

@@ -58,7 +58,7 @@ const HistoryChart: React.FC<HistoryChartProps> = ({ showLast }) => {
           label: t('Burned'),
           data: getDataArray('burned'),
           yAxisID: 'y-axis-burned',
-          ...lineStyles({ color: '#1FC7D4' }),
+          ...lineStyles({ color: '#312783' }),
         },
       ],
     }
@@ -105,7 +105,7 @@ const HistoryChart: React.FC<HistoryChartProps> = ({ showLast }) => {
             return `${t('Round #%num%', { num: tooltipItem[0].label })}`
           },
           label: (tooltipItem) => {
-            return ` ${tooltipItem.yLabel.toLocaleString()} CAKE`
+            return ` ${tooltipItem.yLabel.toLocaleString()} GLENTY`
           },
           labelColor: (tooltipItem, chart) => {
             return {
@@ -128,7 +128,7 @@ const HistoryChart: React.FC<HistoryChartProps> = ({ showLast }) => {
             type: 'linear',
             position: 'right',
             id: 'y-axis-burned',
-            ...axesStyles({ color: '#1FC7D4', lineHeight: 1.5 }),
+            ...axesStyles({ color: '#312783', lineHeight: 1.5 }),
           },
         ],
         xAxes: [

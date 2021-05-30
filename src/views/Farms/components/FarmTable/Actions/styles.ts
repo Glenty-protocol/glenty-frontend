@@ -46,7 +46,7 @@ export const ActionContent = styled.div`
 export const Earned = styled.div`
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.colors.text};
+  color: white;
 `
 
 export const Staked = styled.div`

@@ -19,12 +19,15 @@ const TotalValueLockedCard = () => {
     <StyledTotalValueLockedCard>
       <CardBody>
         <Heading scale="lg" mb="24px">
-          {t('Total Value Locked (TVL)')}
+          <div style={{ color: 'white' }}>
+            {t('Total Value Locked (TVL)')}
+          </div>
         </Heading>
         {data ? (
           <>
-            <Heading scale="xl">{`$${tvl}`}</Heading>
-            <Text color="textSubtle">{t('Across all LPs and Syrup Pools')}</Text>
+            <Heading scale="xl"><div style={{ color: 'white' }}>{`$${tvl}`}</div></Heading>
+            <Text color="textSubtle">
+              <div style={{ color: 'white' }}>{t('Across all LPs and Syrup Pools')}</div></Text>
           </>
         ) : (
           <Skeleton height={66} />

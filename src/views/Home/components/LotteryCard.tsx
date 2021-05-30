@@ -75,7 +75,7 @@ const LotteryCard = () => {
     if (!allowance.toNumber()) {
       return (
         <Button width="100%" disabled={requestedApproval} onClick={handleApprove}>
-          {t('Approve CAKE')}
+          {t('Approve GLENTY')}
         </Button>
       )
     }
@@ -99,7 +99,7 @@ const LotteryCard = () => {
         </Heading>
         <CardImage src="/images/ticket.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>{t('CAKE to Collect')}:</Label>
+          <Label>{t('GLENTY to Collect')}:</Label>
           <CakeWinnings claimAmount={claimAmount} />
         </Block>
         <Block>
