@@ -70,9 +70,9 @@ const EarnAPRCard = () => {
   const [earnUpTo, InFarms] = earnAprText.split(aprText)
 
   return (
-    <StyledFarmStakingCard>
+    <StyledFarmStakingCard style={{ color: 'white' }}>
       <NavLink exact activeClassName="active" to="/farms" id="farm-apr-cta">
-        <CardBody>
+        <CardBody style={{ color: 'white' }}>
           <Heading color="contrast" scale="lg">
             <div style={{ color: 'white' }}> {earnUpTo}</div>
           </Heading>

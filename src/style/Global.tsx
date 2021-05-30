@@ -26,17 +26,17 @@ const GlobalStyle = createGlobalStyle`
     background-position:bottom;
   }
 
-  #root > div > div > div > div > div:nth-child(2) > div:nth-child(1) > div.sc-fnVZcZ.lbfTVL.sc-kTCsyW.hMYHOS {
+  #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(1) > div[style="color: white;"] {
     background: linear-gradient(
       82deg
       , rgba(49, 39, 131, 0.95),60%, rgba(49, 39, 131, 0.1));
   }
 
-  #root > div > div > div > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div {
+  #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(1) > div:nth-child(2) > div {
     background: rgba(49, 39, 131, 0.9);
   }
 
-  #root > div.sc-WZYut.bvAOlI > div > div > div > div:nth-child(2) > div:nth-child(2) > div.sc-fnVZcZ.lbfTVL.sc-amkrK.kEytyc {
+  #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(2) > div[style="color: white;"] {
     background: rgba(49, 39, 131, 0.9);
   }
 

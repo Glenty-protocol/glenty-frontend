@@ -54,7 +54,7 @@ const FarmedStakingCard = () => {
   }, [account, balancesWithValue, masterChefContract])
 
   return (
-    <StyledFarmStakingCard>
+    <StyledFarmStakingCard style={{ color: 'white' }}>
       <CardBody>
         <Heading scale="xl" mb="24px">
           <div style={{ color: 'white' }}>
