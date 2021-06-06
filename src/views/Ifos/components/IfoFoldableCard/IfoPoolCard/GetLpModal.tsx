@@ -15,7 +15,7 @@ const GetLpModal: React.FC<Partial<Props>> = ({ currency, onDismiss }) => {
     <Modal title={t('LP Tokens required')} onDismiss={onDismiss}>
       <ModalBody maxWidth="288px">
         <Image
-          src={`/images/farms/${currency.symbol.split(' ')[0].toLocaleLowerCase()}.svg`}
+          src={`/images/farms/${currency.symbol.split(' ')[0].toLocaleLowerCase()}.png`}
           width={72}
           height={72}
           margin="auto"
@@ -26,7 +26,7 @@ const GetLpModal: React.FC<Partial<Props>> = ({ currency, onDismiss }) => {
         <Button
           as={Link}
           external
-          href={`${BASE_ADD_LIQUIDITY_URL}/BNB/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82`}
+          href={`${BASE_ADD_LIQUIDITY_URL}/BNB/0xEDbe76ECeF753dBC5EaE8cbFfFd206a73eDA4530`}
           endIcon={<OpenNewIcon color="white" />}
           minWidth="100%" // Bypass the width="fit-content" on Links
         >

@@ -62,7 +62,7 @@ const FarmedStakingCard = () => {
           </div>
 
         </Heading>
-        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/cake.svg" alt="cake logo" width={94} height={64} />
         <Block>
           <div style={{ color: 'white' }}>
             <Label><div style={{ color: 'white' }}>{t('GLENTY to Harvest')}:</div></Label>
