@@ -149,14 +149,14 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
   })
   const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
   const bsc = getBscScanAddressUrl(lpAddress)
-  const info = `https://pancakeswap.info/pair/${lpAddress}`
+  const info = `https://info.glenty.com/pair/${lpAddress}`
 
   return (
     <Container expanded={expanded}>
       <InfoContainer>
         {isActive && (
           <StakeContainer>
-            <StyledLinkExternal href={`https://exchange.pancakeswap.finance/#/add/${liquidityUrlPathParts}`}>
+            <StyledLinkExternal href={`https://exchange.glenty.com/#/add/${liquidityUrlPathParts}`}>
               {t('Get %symbol%', { symbol: lpLabel })}
             </StyledLinkExternal>
           </StakeContainer>

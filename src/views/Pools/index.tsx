@@ -70,7 +70,7 @@ const Pools: React.FC = () => {
         <Flex justifyContent="space-between" flexDirection={['column', null, 'row']}>
           <Flex flexDirection="column" mr={['8px', 0]}>
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Syrup Pools')}
+              {t('Gigapool')}
             </Heading>
             <Heading scale="md" color="text">
               {t('Just stake some tokens to earn.')}

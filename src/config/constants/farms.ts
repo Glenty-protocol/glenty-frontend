@@ -10,13 +10,13 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GLENTY',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0xEDbe76ECeF753dBC5EaE8cbFfFd206a73eDA4530',
+      56: '0x862793a2ba5708570c262972b76473cd5786f349',
     },
     token: tokens.syrup,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 2,
+    pid: 251,
     lpSymbol: 'GLENTY-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
@@ -26,7 +26,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 251,
+    pid: 2,
     lpSymbol: 'CAKE-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
