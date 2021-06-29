@@ -25,7 +25,9 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
     background-position:bottom;
   }
-
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
   #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(1) > div[style="color: white;"] {
     background: linear-gradient(
       82deg
