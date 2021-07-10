@@ -62,9 +62,9 @@ const Top100 = () => {
           <div><b>top100 amount</b></div><br />
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
           <br /><br />
-          <div>Buy Price: 0.1 BNB</div>
+          <div>Buy Price: 800 BNB</div>
           <br />
-          <div style={{ fontSize: '11px' }}>{`You must send ${count * 0.1} BNB for ${count} TOP100`}</div>
+          <div style={{ fontSize: '11px' }}>{`You must send ${count * 800} BNB for ${count} TOP100`}</div>
         </div>
       </div>
     </div>

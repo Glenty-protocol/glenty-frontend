@@ -39,101 +39,16 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'PoolIcon',
     href: '/pools',
   },
-  // {
-  //   label: t('Prediction (BETA)'),
-  //   icon: 'PredictionsIcon',
-  //   href: '/prediction',
-  // },
-  // {
-  //   label: t('Lottery'),
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
-  // {
-  //   label: t('Collectibles'),
-  //   icon: 'NftIcon',
-  //   href: '/collectibles',
-  // },
-  // {
-  //   label: t('Team Battle'),
-  //   icon: 'TeamBattleIcon',
-  //   href: '/competition',
-  // },
-  // {
-  //   label: t('Teams & Profile'),
-  //   icon: 'GroupsIcon',
-  //   items: [
-  //     {
-  //       label: t('Leaderboard'),
-  //       href: '/teams',
-  //     },
-  //     {
-  //       label: t('Task Center'),
-  //       href: '/profile/tasks',
-  //     },
-  //     {
-  //       label: t('Your Profile'),
-  //       href: '/profile',
-  //     },
-  //   ],
-  // },
   {
-    label: t('Info'),
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: t('Overview'),
-        href: 'https://info.glenty.com',
-      },
-      {
-        label: t('Tokens'),
-        href: 'https://info.glenty.com/tokens',
-      },
-      {
-        label: t('Pairs'),
-        href: 'https://info.glenty.com/pairs',
-      },
-      {
-        label: t('Accounts'),
-        href: 'https://info.glenty.com/accounts',
-      },
-    ],
+    label: "Github",
+    href: "https://github.com/glenty-protocol",
+    icon: 'AuditIcon'
   },
-  // {
-  //   label: t('IFO'),
-  //   icon: 'IfoIcon',
-  //   href: '/ifo',
-  // },
   {
-    label: t('More'),
-    icon: 'MoreIcon',
-    items: [
-      {
-        label: t('Contact'),
-        href: 'https://docs.glenty.com/contact-us',
-      },
-      {
-        label: t('Voting'),
-        href: 'https://voting.glenty.com',
-      },
-      {
-        label: t('Github'),
-        href: 'https://github.com/glenty-protocol',
-      },
-      {
-        label: t('Docs'),
-        href: 'https://docs.glenty.com',
-      },
-      {
-        label: t('Blog'),
-        href: 'https://glenty.medium.com',
-      },
-      {
-        label: t('Merch'),
-        href: 'https://glenty.creator-spring.com/',
-      },
-    ],
-  },
+    label: "Docs",
+    href: "https://glenty.gitbook.io/glenty/",
+    icon: 'TicketIcon'
+  }
 ]
 
 export default config

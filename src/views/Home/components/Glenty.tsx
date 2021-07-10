@@ -8,7 +8,7 @@ import { useWeb3React } from '@web3-react/core'
 import { AbiItem } from 'web3-utils'
 import useToast from 'hooks/useToast'
 import Abi from './abi.json'
-import top100img from './top100.svg'
+import top100img from './glenty.svg'
 
 const config = {
   buyContractAddressGlenty: "0x6dBEa0369b3FF7C0472Ce7A3fEE629a924b7494a"
@@ -75,12 +75,12 @@ const Glenty = () => {
         }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '18px', textAlign: 'center', margin: '20px', padding: '12px', width: '100%', height: '100%' }}>BUY GLENTY</div>
       </Heading>
       <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
-        <img alt="glenty token" style={{ width: '50%' }} src={top100img} />
+        <img alt="glenty token" style={{ width: '27%' }} src={top100img} />
         <div>
           <div><b>glenty amount</b></div><br />
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
           <br /><br />
-          <div>Buy Price: 0.00101 BNB</div>
+          <div>1 GLENTY = 0.20 USD for early bird</div>
           <br />
           <div style={{ fontSize: '11px' }}>{`You must send ${count / 990} BNB for ${count} GLENTY`}</div>
         </div>

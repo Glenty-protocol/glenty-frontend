@@ -77,50 +77,6 @@ const BountyCard = () => {
   return (
     <>
       {tooltipVisible && tooltip}
-      <StyledCard>
-        <CardBody>
-          <Flex flexDirection="column">
-            <Flex alignItems="center" mb="12px">
-              <Text fontSize="16px" bold color="textSubtle" mr="4px">
-                {t('Auto 100 Bounty')}
-              </Text>
-              <Box ref={targetRef}>
-                <HelpIcon color="textSubtle" />
-              </Box>
-            </Flex>
-          </Flex>
-          <Flex alignItems="center" justifyContent="space-between">
-            <Flex flexDirection="column" mr="12px">
-              <Heading>
-                {hasFetchedCakeBounty ? (
-                  <Balance fontSize="20px" bold value={cakeBountyToDisplay} decimals={3} />
-                ) : (
-                  <Skeleton height={20} width={96} mb="2px" />
-                )}
-              </Heading>
-              {hasFetchedDollarBounty ? (
-                <Balance
-                  fontSize="12px"
-                  color="textSubtle"
-                  value={dollarBountyToDisplay}
-                  decimals={2}
-                  unit=" USD"
-                  prefix="~"
-                />
-              ) : (
-                <Skeleton height={16} width={62} />
-              )}
-            </Flex>
-            <Button
-              disabled={!dollarBountyToDisplay || !cakeBountyToDisplay || !callFee}
-              onClick={onPresentBountyModal}
-              scale="sm"
-            >
-              {t('Claim')}
-            </Button>
-          </Flex>
-        </CardBody>
-      </StyledCard>
     </>
   )
 }
