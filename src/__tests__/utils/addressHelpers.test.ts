@@ -2,7 +2,7 @@ import { getAddress } from 'utils/addressHelpers'
 
 describe('getAddress', () => {
   const address = {
-    56: '0x862793a2ba5708570c262972b76473cd5786f349',
+    56: '0x2B82fd7408D54fA3A5F0CEAAC06b6D8AE775357a',
     97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
   }
 

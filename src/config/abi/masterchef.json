@@ -2,13 +2,8 @@
   {
     "inputs": [
       {
-        "internalType": "contract CakeToken",
-        "name": "_cake",
-        "type": "address"
-      },
-      {
-        "internalType": "contract SyrupBar",
-        "name": "_syrup",
+        "internalType": "contract GlentyToken",
+        "name": "_glenty",
         "type": "address"
       },
       {
@@ -17,8 +12,13 @@
         "type": "address"
       },
       {
+        "internalType": "address",
+        "name": "_feeAddress",
+        "type": "address"
+      },
+      {
         "internalType": "uint256",
-        "name": "_cakePerBlock",
+        "name": "_glentyPerBlock",
         "type": "uint256"
       },
       {
@@ -150,6 +150,11 @@
         "type": "address"
       },
       {
+        "internalType": "uint16",
+        "name": "_depositFeeBP",
+        "type": "uint16"
+      },
+      {
         "internalType": "bool",
         "name": "_withUpdate",
         "type": "bool"
@@ -158,32 +163,6 @@
     "name": "add",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "cake",
-    "outputs": [
-      {
-        "internalType": "contract CakeToken",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "cakePerBlock",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -244,16 +223,16 @@
     "type": "function"
   },
   {
-    "inputs": [
+    "inputs": [],
+    "name": "feeAddress",
+    "outputs": [
       {
-        "internalType": "uint256",
-        "name": "_amount",
-        "type": "uint256"
+        "internalType": "address",
+        "name": "",
+        "type": "address"
       }
     ],
-    "name": "enterStaking",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -281,16 +260,29 @@
     "type": "function"
   },
   {
-    "inputs": [
+    "inputs": [],
+    "name": "glenty",
+    "outputs": [
+      {
+        "internalType": "contract GlentyToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "glentyPerBlock",
+    "outputs": [
       {
         "internalType": "uint256",
-        "name": "_amount",
+        "name": "",
         "type": "uint256"
       }
     ],
-    "name": "leaveStaking",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -352,7 +344,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingCake",
+    "name": "pendingGlenty",
     "outputs": [
       {
         "internalType": "uint256",
@@ -390,8 +382,13 @@
       },
       {
         "internalType": "uint256",
-        "name": "accCakePerShare",
+        "name": "accGlentyPerShare",
         "type": "uint256"
+      },
+      {
+        "internalType": "uint16",
+        "name": "depositFeeBP",
+        "type": "uint16"
       }
     ],
     "stateMutability": "view",
@@ -430,12 +427,30 @@
         "type": "uint256"
       },
       {
+        "internalType": "uint16",
+        "name": "_depositFeeBP",
+        "type": "uint16"
+      },
+      {
         "internalType": "bool",
         "name": "_withUpdate",
         "type": "bool"
       }
     ],
     "name": "set",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_feeAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setFeeAddress",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -461,19 +476,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "syrup",
-    "outputs": [
-      {
-        "internalType": "contract SyrupBar",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -509,11 +511,11 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "multiplierNumber",
+        "name": "_glentyPerBlock",
         "type": "uint256"
       }
     ],
-    "name": "updateMultiplier",
+    "name": "updateEmissionRate",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

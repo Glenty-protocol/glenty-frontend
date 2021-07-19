@@ -6,20 +6,20 @@ const tokens = {
   cake: {
     symbol: 'GLENTY',
     address: {
-      56: '0x862793a2ba5708570c262972b76473cd5786f349',
+      56: '0x2B82fd7408D54fA3A5F0CEAAC06b6D8AE775357a',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://glenty.com/',
   },
   100: {
     symbol: '100',
     address: {
-      56: '0x862793a2ba5708570c262972b76473cd5786f349',
+      56: '0xa8a4df11e38c6ef79f65f22fa0a8ae0cc267637b',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
-    decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    decimals: 9,
+    projectLink: 'https://glenty.com/',
   },
   txl: {
     symbol: 'TXL',
@@ -442,7 +442,7 @@ const tokens = {
       97: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://glenty.com/',
   },
   blink: {
     symbol: 'BLINK',
@@ -586,7 +586,7 @@ const tokens = {
       97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://glenty.com/',
   },
   bifi: {
     symbol: 'BIFI',
