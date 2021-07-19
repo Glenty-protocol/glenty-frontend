@@ -57,12 +57,12 @@ const Top100 = () => {
         }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '18px', textAlign: 'center', margin: '20px', padding: '12px', width: '100%', height: '100%' }}>BUY TOP100</div>
       </Heading>
       <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
-        <img alt="top100 token" style={{ width: '50%' }} src={top100img} />
+        <img alt="top100 token" style={{ width: '45%' }} src={'/static/media/glenty.fa9ba342.svg'} />
         <div>
           <div><b>top100 amount</b></div><br />
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
           <br /><br />
-          <div>Buy Price: 800 BNB</div>
+          <div>Price top100 = Marketcap around 200k</div>
           <br />
           <div style={{ fontSize: '11px' }}>{`You must send ${count * 800} BNB for ${count} TOP100`}</div>
         </div>

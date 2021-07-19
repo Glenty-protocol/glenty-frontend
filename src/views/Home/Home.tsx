@@ -88,9 +88,9 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" scale="xl" mb="24px" color="secondary">
-          <div style={{ color: 'white' }}> {t('Glenty')}</div>
+          <div style={{ fontSize : '72pt' }}> {t('Glenty')}</div>
         </Heading>
-        <Text><div style={{ color: '#F3BA2F' }}>{t('The #1 AMM and yield farm on Binance Smart Chain.')}</div></Text>
+        <Text><div style={{ color: 'black', fontSize: '26pt', fontWeight:'bold' }}>{t('The #1 AMM and yield farm on Binance Smart Chain.')}</div></Text>
       </Hero>
       <div style={{ color: 'white' }}>
         <Cards>
