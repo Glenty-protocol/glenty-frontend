@@ -8,7 +8,7 @@ import { useWeb3React } from '@web3-react/core'
 import { AbiItem } from 'web3-utils'
 import useToast from 'hooks/useToast'
 import Abi from './abi.json'
-import top100img from './top100.svg'
+import top100img from './glenty.svg'
 
 const config = {
   buyContractAddressTop100: "0x7475E30e90ff55d627cAdfcb4e869d7d203B1b98"
@@ -57,7 +57,7 @@ const Top100 = () => {
         }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '18px', textAlign: 'center', margin: '20px', padding: '12px', width: '100%', height: '100%' }}>BUY TOP100</div>
       </Heading>
       <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
-        <img alt="top100 token" style={{ width: '45%' }} src={'/static/media/glenty.fa9ba342.svg'} />
+        <img alt="top100 token" style={{ width: '45%' }} src={top100img} />
         <div>
           <div><b>top100 amount</b></div><br />
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
