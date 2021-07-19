@@ -37,7 +37,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Gigapool'),
     icon: 'PoolIcon',
-    href: '/pools',
+    href: 'https://gigapool.glenty.com/pools',
   },
   {
     label: "Github",
