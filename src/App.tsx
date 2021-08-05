@@ -18,10 +18,13 @@ import history from './routerHistory'
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
 const Lottery = lazy(() => import('./views/Lottery'))
+const Top100 = lazy(() => import('./views/Top100'))
 const Ifos = lazy(() => import('./views/Ifos'))
+const Ico = lazy(() => import('./views/Ico'))
 const NotFound = lazy(() => import('./views/NotFound'))
 const Collectibles = lazy(() => import('./views/Collectibles'))
 const Teams = lazy(() => import('./views/Teams'))
+const Pool = lazy(() => import('./views/Pool'))
 const Team = lazy(() => import('./views/Teams/Team'))
 const Profile = lazy(() => import('./views/Profile'))
 const TradingCompetition = lazy(() => import('./views/TradingCompetition'))
@@ -58,6 +61,9 @@ const App: React.FC = () => {
             <Route path="/ifo">
               <Ifos />
             </Route>
+            <Route path="/ico">
+              <Ico />
+            </Route>
             <Route path="/collectibles">
               <Collectibles />
             </Route>
@@ -75,6 +81,12 @@ const App: React.FC = () => {
             </Route>
             <Route path="/prediction">
               <Predictions />
+            </Route>
+            <Route path="/top100">
+              <Top100 />
+            </Route>
+            <Route path="/gigapool">
+              <Pool />
             </Route>
             {/* Redirect */}
             <Route path="/staking">

@@ -26,6 +26,7 @@ const TotalValueLockedCard = () => {
         {data ? (
           <>
             <Heading scale="xl"><div style={{ color: 'white' }}>{`$${tvl}`}</div></Heading>
+            <br /><br /><br />
             <Text color="textSubtle">
               <div style={{ color: 'white' }}>{t('Across all LPs and Gigapool')}</div></Text>
           </>

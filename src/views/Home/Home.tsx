@@ -85,18 +85,18 @@ const Home: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <Page>
+    <Page style={{margin: 'auto 15%'}}>
       <Hero>
         <Heading as="h1" scale="xl" mb="24px" color="secondary">
-        <div style={{ fontSize : '72pt' }}> {t('Glenty')}</div>
+        <div style={{ fontSize : '38pt', color:'#DAA520' }}> {t('Glenty')}</div>
         </Heading>
-        <Text><div style={{ color: 'black', fontSize: '26pt', fontWeight:'bold' }}>{t('The #1 index fund DEX and yield farm on Binance Smart Chain.')}</div></Text>
+        <Text><div style={{ color: '#DAA520', fontSize: '26px' }}>{t('The #1 index fund DEX and yield farm on Binance Smart Chain.')}</div></Text>
       </Hero>
       <div style={{ color: 'white' }}>
         <Cards>
           <FarmStakingCard />
           {/* <LotteryCard /> */}
-          <div><CakeStats /><br /><br /><TotalValueLockedCard /></div>
+          <div><CakeStats /><br /><br /><br /><TotalValueLockedCard /></div>
           <Top100 />
           <Glenty />
         </Cards>
