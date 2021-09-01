@@ -226,6 +226,13 @@ document.querySelectorAll('button')[2].remove()
 for(let i = 0; i < document.querySelectorAll('td img').length; i++){
   document.querySelectorAll('td img')[i].style.top = '0'
 }
+const coinsFarm = document.querySelectorAll('tr');
+for(let i=0; i < coinsFarm.length; i++){
+  document.querySelectorAll('tr')[i].querySelectorAll('td')[0].querySelector('div div div div').querySelectorAll('div')[5].style.fontSize='10px';
+  document.querySelectorAll('tr')[i].querySelectorAll('td')[0].querySelector('div div div div').querySelectorAll('div')[5].style.textAlign='center';
+  document.querySelectorAll('tr')[i].querySelectorAll('td')[2].querySelector('div div div div').querySelectorAll('div')[4].style.fontSize='10px';
+}
+
 }
 
 
