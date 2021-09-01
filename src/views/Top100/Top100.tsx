@@ -1,103 +1,54 @@
 import React from 'react'
-import { useTranslation } from 'contexts/Localization'
 import Page from 'components/layout/Page'
 
 import Top100 from 'views/Home/components/Top100'
 
 const Top1: React.FC = () => {
-  const { t } = useTranslation()
+  const top100List=
+[{name:'Bitcoin',title:'BTC',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/bitcoin-btc-logo.svg',cap:20},
+{name:'Ethereum',title:'ETH',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/ethereum-eth-logo.svg',cap:20},
+{name:'Tether',title:'Tether',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/tether-usdt-logo.svg',cap:20},
+{name:'Binance Coin',title:'BNB',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/binance-coin-bnb-logo.svg',cap:20},
+{name:'cardano',title:'Cardano',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/cardano-ada-logo.svg',cap:20},
+{name:'USD Coin',title:'USDC',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/usd-coin-usdc-logo.svg',cap:20},
+{name:'Venus XRP',title:'vXRP',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/xrp-xrp-logo.svg',cap:20},
+{name:'Doge Coin',title:'Doge',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/dogecoin-doge-logo.svg',cap:20},
+{name:'Polkadot',title:'DOT',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/polkadot-new-dot-logo.svg',cap:20},
+{name:'Binance USD',title:'BUSD',apy:10,quantity:20,price:20,img:'./images/gigapoolIcons/binance-usd-busd-logo.svg',cap:20},
+]
 
   return (
-    <Page style={{paddingTop: '20%',width:'100%',margin:'auto 15%'}}>
-        <div style={{width: '60%', display:'grid',gridTemplateColumns:'100% 60%', gridGap:'5%',marginTop:'-30%'}}>
+    <Page className='TopPage' style={{paddingTop: '20%',width:'100%',margin:'auto 15%'}}>
+        <div className='Topgrid' style={{width: '60%', display:'grid',gridTemplateColumns:'100% 60%', gridGap:'5%',marginTop:'-30%'}}>
           <Top100 />
-          <div>
-            <div style={{backgroundColor:'rgba(120, 140, 255, 0.9)',padding:'10px 15px',borderTopRightRadius: '20px',borderTopLeftRadius: '20px'}}><h1 style={{textAlign:'center',color:'white',fontSize:'20pt'}}>CRYPTOS PARTS</h1></div>
-            <div style={{backgroundColor:'rgba(49, 39, 131, 0.9)',borderBottomRightRadius: '20px',borderBottomLeftRadius: '20px'}}>
-              <img style={{height:'250px',width:'350px',margin:'55px 15px'}} src='./images/Fichier 5.svg' alt='top5'/>
-              </div>  
+              <img src='./images/Fichier 5.svg' alt='top5'/>
           </div>
-          </div>
-          <div style={{display:'grid',height:'1050px',marginTop:'30px'}}>
+          <div className='table' style={{display:'grid',height:'1050px',marginTop:'30px'}}>
             <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(120, 140, 255, 0.9)',height:'50%',paddingTop:'4%',borderTopRightRadius: '20px',borderTopLeftRadius: '20px',marginBottom:'5%'}}>
-              <h1 style={{paddingLeft:'10%',color:'white',fontSize:'30pt'}}>TOP100 LIST</h1>
+              <h1 className='tableH1' style={{paddingLeft:'10%',color:'white',fontSize:'30pt'}}>TOP100 LIST</h1>
               <h6 style={{color:'white',fontWeight:'lighter'}}>Market cap % </h6>
               <h6 style={{color:'white',fontWeight:'lighter'}}>In GigaPool quantity</h6>
               <h6 style={{color:'white',textAlign:'center',fontWeight:'lighter'}}>APY</h6>
               <h6 style={{color:'white',textAlign:'center',fontWeight:'lighter'}}>Price</h6>
               </div>
 
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>1<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BTC</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>53.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
+            {top100List.map((coin)=>(
+              <div className='coinTop100Container' key={coin.title} style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
+            <div className='coinTop100' style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter',display:'grid',gridTemplateColumns:'10% 10% 10% 20%'}}>
+              <span>{top100List.indexOf(coin) + 1}</span>
+              <span style={{marginLeft:'10%'}}>|</span>
+              
+              <img src={coin.img} style={{height:'40px',margin:'-10% 1px'}} alt={coin.name} />
+              <span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>
+                {coin.title}
+              </span>
+              </div>
+              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>{`${coin.cap} %`} </h6>
+              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>{coin.quantity}</h6>
+              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>{coin.apy}</h6>
+              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>{coin.price}</h6>
             </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>2<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>ETH</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>3<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>4<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>TETHER</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>5<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>6<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>7<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>8<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>9<span style={{marginLeft:'10%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(49, 39, 131, 0.9)',height:'100px',marginTop:'-10%',borderBottomRightRadius: '20px',borderBottomLeftRadius: '20px'}}>
-            <h1 style={{paddingLeft:'3%',color:'white',fontSize:'20pt',marginTop:'30px',fontWeight:'lighter'}}>10<span style={{marginLeft:'8%'}}>|</span><span style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>BNB</span></h1>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>90.00% </h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',fontWeight:'lighter'}}>20</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-              <h6 style={{color:'white',marginTop:'30px',fontSize:'20pt',textAlign:'center',fontWeight:'lighter'}}>10</h6>
-            </div>
-            
+            ))} 
           </div>
     </Page>
   )

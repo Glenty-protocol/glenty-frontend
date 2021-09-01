@@ -90,17 +90,17 @@ const Home: React.FC = () => {
         <Heading as="h1" scale="xl" mb="24px" color="secondary">
         <div style={{ fontSize : '38pt', color:'#DAA520' }}> {t('Glenty')}</div>
         </Heading>
-        <Text><div style={{ color: '#DAA520', fontSize: '26px' }}>{t('The #1 index fund DEX and yield farm on Binance Smart Chain.')}</div></Text>
+        <Text><div id='secondText' style={{ color: '#DAA520', fontSize: '26px' }}>{t('The #1 index fund DEX and yield farm on Binance Smart Chain.')}</div></Text>
       </Hero>
       <div style={{ color: 'white' }}>
-        <Cards>
+        <Cards className='mobile-container'>
           <FarmStakingCard />
           {/* <LotteryCard /> */}
           <div><CakeStats /><br /><br /><br /><TotalValueLockedCard /></div>
           <Top100 />
           <Glenty />
         </Cards>
-        <Cards>
+        <Cards className='mobile-container cont2'>
           <EarnAPRCard />
           <EarnAssetCard />
 

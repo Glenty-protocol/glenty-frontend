@@ -341,26 +341,26 @@ const Farms: React.FC = () => {
   return (
     <>
       <PageHeader>
-        <Heading as="h1" scale="xxl" color="secondary" mb="24px">
+        <Heading as="h1" scale="xxl" color="white" mb="24px">
           {t('Farms')}
         </Heading>
-        <Heading scale="lg" color="text">
+        <Heading scale="lg" color="rgb(218, 165, 32)">
           {t('Stake Liquidity Pool (LP) tokens to earn.')}
         </Heading>
       </PageHeader>
       <Page>
         <ControlContainer>
           <ViewControls>
-            <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
-            <ToggleWrapper>
+           {/* <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} /> */}
+            {/* <ToggleWrapper>
               <Toggle checked={stakedOnly} onChange={() => setStakedOnly(!stakedOnly)} scale="sm" />
-              <Text> {t('Staked only')}</Text>
-            </ToggleWrapper>
-            <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} />
+              <Text color='white'> {t('Staked only')}</Text>
+            </ToggleWrapper> */}
+            {/* <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} /> */ }
           </ViewControls>
-          <FilterContainer>
+          <FilterContainer className='farmFilter' style={{margin:'auto'}}>
             <LabelWrapper>
-              <Text textTransform="uppercase">{t('Sort by')}</Text>
+             {/* <Text textTransform="uppercase">{t('Sort by')}</Text> */}
               <Select
                 options={[
                   {
@@ -388,7 +388,7 @@ const Farms: React.FC = () => {
               />
             </LabelWrapper>
             <LabelWrapper style={{ marginLeft: 16 }}>
-              <Text textTransform="uppercase">{t('Search')}</Text>
+              {/* <Text textTransform="uppercase">{t('Search')}</Text> */}
               <SearchInput onChange={handleChangeQuery} />
             </LabelWrapper>
           </FilterContainer>

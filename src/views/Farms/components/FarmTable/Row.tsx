@@ -43,6 +43,7 @@ const CellInner = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
+  color:white;
   padding-right: 8px;
 
   ${({ theme }) => theme.mediaQueries.xl} {

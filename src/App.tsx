@@ -64,6 +64,9 @@ const App: React.FC = () => {
             <Route path="/ico">
               <Ico />
             </Route>
+            <Route path="/pools">
+              <Pools />
+            </Route>
             <Route path="/collectibles">
               <Collectibles />
             </Route>

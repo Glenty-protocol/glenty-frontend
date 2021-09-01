@@ -72,10 +72,10 @@ const Glenty = () => {
               t('Either connect your wallet first or make sure you buy more than 0,0000000001 tokens.'),
             )
           }
-        }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '18px', textAlign: 'center', margin: '20px auto', padding: '12px', width: '100%', height: '100%' }}>BUY GLENTY</div>
+        }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '18px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '12px', width: '25%', height: '100%' }}>BUY GLENTY</div>
       </Heading>
       <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
-        <img alt="glenty token" style={{ width: '27%' }} src={top100img} />
+        <img alt="glenty token" style={{ width: '50%' }} src={top100img} />
         <div>
           <div><b>glenty amount</b></div><br />
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
