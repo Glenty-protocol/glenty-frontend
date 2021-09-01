@@ -239,7 +239,7 @@ background-repeat: no-repeat;
       top: 100px;
     }
     .gigapoolheader{
-      font-size: 48pt;
+      font-size: 45pt;
     }
   }
   .moreMenu{
@@ -350,3 +350,74 @@ tr td:first-child { border-top-left-radius: 20px; }
 tr td:last-child { border-top-right-radius: 20px; }
 tr td:first-child { border-bottom-left-radius: 20px; }
 tr td:last-child { border-bottom-right-radius: 20px; }
+
+.coinTop100{
+  padding-left:3%;
+  color:white;
+  font-size:20pt;
+  margin-top:30px;
+  font-weight:lighter;
+  display:grid;
+  grid-template-columns:10% 10% 10% 20%;
+}
+.tableImg{
+  height:40px;
+  margin:-10% 1px;
+}
+.info{
+  color:white;
+  margin-top:30px;
+  font-size:20pt;
+  font-weight:lighter;
+}
+.infoCenter{
+  color:white;
+  margin-top:30px;
+  font-size:20pt;
+  text-align:center;
+  font-weight:lighter;
+}
+.coinTop100Container{
+  display:grid;
+  grid-template-columns:40% 20% 20% 10% 10%;
+  background-color:rgba(49, 39, 131, 0.9);
+  height:100px;
+  margin-top:-10%;
+}
+@media only screen and (max-width:400px){
+  .tableH6Header{
+    font-size: 10pt;
+  }
+  .coinTop100{
+    grid-template-columns: 20% 10% 20% 15% !important;
+  }
+  .tableImg{
+    height: 100% !important;
+    margin: -100% 1px !important;
+  }
+  .info,.infoCenter,.coinNameTable{
+    font-size: 12pt !important;
+    text-align: center;
+  }
+  .blockIco{
+    margin-top: 5%;
+  }
+  .logoICO{
+    height: 65px !important;
+  }
+  .phase{
+    width: 100% !important;
+    padding-top: 15% !important;
+    font-size: 8pt !important;
+  }
+  .whieCubes{
+    padding-right: 0px !important;
+  }
+  .smallP{
+    font-size: 8pt !important;
+  }
+  .iconCoinICO{
+    width: 42px !important;
+    height: 42px !important;
+  }
+}

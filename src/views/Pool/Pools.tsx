@@ -25,7 +25,7 @@ const gigaList =
 {name:'Ethereum',title:'ETH',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/ethereum-eth-logo.svg',contract:'0x2170ed0880ac9a755fd29b2688956bd959f933f8'},
 {name:'Tether',title:'Tether',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/tether-usdt-logo.svg',contract:'#'},
 {name:'Binance Coin',title:'BNB',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/binance-coin-bnb-logo.svg',contract:'#'},
-{name:'cardano',title:'Cardano',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/cardano-ada-logo.svg',contract:'0x81c15d3e956e55e77e1f3f257f0a65bd2725fc55'},
+{name:'cardano',title:'ADA',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/cardano-ada-logo.svg',contract:'0x81c15d3e956e55e77e1f3f257f0a65bd2725fc55'},
 {name:'USD Coin',title:'USDC',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/usd-coin-usdc-logo.svg',contract:'0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d'},
 {name:'Venus XRP',title:'vXRP',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/xrp-xrp-logo.svg',contract:'0xb248a295732e0225acd3337607cc01068e3b9c10'},
 {name:'Doge Coin',title:'Doge',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/dogecoin-doge-logo.svg',contract:'0xba2ae424d960c26247dd6c32edc70b295c744c43'},
