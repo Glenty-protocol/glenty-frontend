@@ -77,7 +77,7 @@ const EarnAPRCard = () => {
             <div style={{ color: 'white' }}> {earnUpTo}</div>
           </Heading>
           <CardMidContent color="#7645d9">
-          <div style={{ color: '#F3BA2F' }}>{highestApr && !isFetchingFarmData ? (
+          <div className='homeSmall' style={{ color: '#F3BA2F' }}>{highestApr && !isFetchingFarmData ? (
               `${highestApr}%`
             ) : (
               <Skeleton animation="pulse" variant="rect" height="44px" />

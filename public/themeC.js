@@ -252,7 +252,7 @@ document.querySelector('.blockIco div').style.gridGap='20%';
 document.querySelector('.blockIco div').style.paddingRight='5px';
 document.querySelectorAll('span')[2].style.paddingLeft='';
 document.querySelectorAll('span')[3].style.paddingLeft='';
-document.querySelector('.IcoPage').style.height='150vh';
+document.querySelector('.IcoPage').style.height='180vh';
 document.querySelector('.icons').style.width='100%';
 document.querySelector('.icons').style.float='';
 
@@ -525,6 +525,7 @@ document.querySelectorAll('img')[4].style.marginBottom='10%';
 document.querySelector('.coinTop100Container').style.marginTop='-13%';
 document.querySelector('.tableH1').style.fontSize='14pt';
 document.querySelector('.qunat').innerText='Quantity';
+document.querySelector('.tableImg').style.width='100%';
 
 for(let i=0;i < document.querySelectorAll('.coinTop100').length;i++){
   document.querySelectorAll('.coinTop100')[i].style.gridTemplateColumns='15% 10% 10% 20%';

@@ -211,7 +211,7 @@ background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     background: url('./images/menu.svg');
-    height: 150px;
+    height: 100px;
     bottom: -21px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,12 +221,17 @@ background-repeat: no-repeat;
     text-align: center;
   }
   .footerImg{
-    height: 35px;
-    width: 35px;
-    margin: 20% 0% 10% 0%;
+    height: 25px;
+    width: 25px;
+    margin: 15% 0% 10% 0%;
+  }
+  @media only screen and (min-width:500px){
+    .footerImg{  
+      margin: 8% 0% 8% 0%;
+    }
   }
   .footerLinks p{
-    font-size: 16pt;
+    font-size: 10pt;
     font-weight: bold;
     color: #989fac;
   }
@@ -246,11 +251,11 @@ background-repeat: no-repeat;
     position: fixed;
     width: 100%;
     background: url(./images/menu.svg);
-    bottom: 125px;
+    bottom: 75px;
     display: none;
     grid-template-columns: 100%;
     color: #989fac;
-    font-size: 16pt;
+    font-size: 10pt;
     font-weight: bold;
     text-align: center;
     background-size: cover;
@@ -419,5 +424,15 @@ tr td:last-child { border-bottom-right-radius: 20px; }
   .iconCoinICO{
     width: 42px !important;
     height: 42px !important;
+  }
+  #secondText{
+    width: 160%;
+    margin-left: -30%;
+  }
+  .homeSmall{
+    font-size: smaller !important;
+  }
+  .homeSmallBig{
+    font-size: small !important;
   }
 }

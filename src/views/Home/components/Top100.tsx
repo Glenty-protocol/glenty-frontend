@@ -26,7 +26,7 @@ const Top100 = () => {
     <div style={{ backgroundColor: 'rgba(49,39,131,0.9)', borderRadius: '24px' }}>
       <Heading scale="xl" mb="24px" style={{ display: 'flex', backgroundColor: 'rgba(120,140,255,0.9)', borderRadius: '24px 24px 0px 0px', padding: '24px', justifyContent: 'space-between' }}>
         <div style={{ color: 'white' }}>
-          <b style={{lineHeight: '2'}}>Buy Top100 with BNB</b>
+          <b className='homeSmall' style={{lineHeight: '2'}}>Buy Top100 with BNB</b>
         </div>
         <div role="presentation" onClick={() => {
           if (account && count > 0) {
@@ -54,7 +54,7 @@ const Top100 = () => {
               t('Either connect your wallet first or make sure you buy more than 0,0000000001 tokens.'),
             )
           }
-        }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '12px', width: '25%', height: '100%' }}>BUY TOP100</div>
+        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '12px', width: '25%', height: '100%' }}>BUY TOP100</div>
       </Heading>
       <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
         <img alt="top100 token" style={{ width: '50%' }} src={top100img} />

@@ -44,9 +44,9 @@ const Glenty = () => {
     <div style={{ backgroundColor: 'rgba(49,39,131,0.9)', borderRadius: '24px' }}>
       <Heading scale="xl" mb="24px" style={{ display: 'flex', backgroundColor: 'rgba(120,140,255,0.9)', borderRadius: '24px 24px 0px 0px', padding: '24px', justifyContent: 'space-between' }}>
         <div style={{ color: 'white' }}>
-          <b>Buy glenty with BNB</b>
+          <b className='homeSmall'>Buy glenty with BNB</b>
         </div>
-        <div role="presentation" onClick={() => {
+        <div className='homeSmallBig' role="presentation" onClick={() => {
           if(account && count > 0) {
           console.log("conf", Abi as AbiItem[], config.buyContractAddressGlenty);
           const buyContract = new web3.eth.Contract(
@@ -80,7 +80,7 @@ const Glenty = () => {
           <div><b>glenty amount</b></div><br />
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
           <br /><br />
-          <div>1 GLENTY = 0.20 USD for early bird</div>
+          <div className='homeSmallBig'>1 GLENTY = 0.20 USD for early bird</div>
           <br />
           <div style={{ fontSize: '11px' }}>{`You must send ${count / 990} BNB for ${count} GLENTY`}</div>
         </div>
