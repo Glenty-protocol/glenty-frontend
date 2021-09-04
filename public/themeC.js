@@ -376,7 +376,7 @@ const list =
 {name:'Decred',title:'DCR',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/decred-dcr-logo.svg',contract:'#'},
 {name:'TrueUSD',title:'TUSD',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/trueusd-tusd-logo.svg',contract:'#'},
 {name:'Celsius',title:'CEL',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/celsius-cel-logo.svg',contract:'#'},
-{name:'NEM',title:'XEM',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/nem-xem-logo.svgISSED',contract:'#'},
+{name:'NEM',title:'XEM',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/nem-xem-logo.svg',contract:'#'},
 {name:'Zcash',title:'ZEC',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/zcash-zec-logo.svg',contract:'0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb'},
 {name:'Tezos',title:'XTZ',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/stacks-stx-logo.svg',contract:'#'},
 {name:'Stacks',title:'STX',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/compound-comp-logo.svg',contract:'0x715d400f88c167884bbcc41c5fea407ed4d2f8a0'},
