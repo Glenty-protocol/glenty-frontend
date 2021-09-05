@@ -169,11 +169,10 @@ function mobileC(){
  logoM.addEventListener('click',function(){
     window.location.replace('/')
   })
-  document.querySelector('nav button').remove();
-  const priceMLink = document.createElement('a');
-  priceMLink.setAttribute('href','https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82');
-  priceMLink.setAttribute('target','_blank');
-  priceMLink.classList.add('price');
+  document.querySelector('nav button').click();
+  setTimeout(document.querySelector('#root').appendChild(document.querySelector('.price')), 500);
+  setTimeout(document.querySelector('nav button').click(), 1000);
+  setTimeout(  document.querySelector('nav button').remove(), 1500);
   window.onscroll = function() {hideNav()};
 
   function hideNav() {
@@ -184,15 +183,6 @@ function mobileC(){
     }
   }
   
-
-/*price*/
-  const priceMDiv = document.createElement('div');
-  priceMDiv.setAttribute('color','textSubtle');
-  priceMDiv.innerText='$100.000';
-
-  priceMLink.appendChild(priceMDiv);
-  document.querySelector('#root').appendChild(priceMLink);
-
   /*home*/
   window.location.pathname === '/'? homeMc():false
   window.location.href.includes('gigapool')?gigapoolPage():false
