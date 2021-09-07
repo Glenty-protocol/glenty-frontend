@@ -538,7 +538,7 @@ function createFooter(){
   gigapoolM.classList.add('footerLinks');
 
 
-  TradeM.setAttribute('href','/trade');
+  TradeM.setAttribute('href','https://exchange.glenty.com/#/swap');
   Top100M.setAttribute('href','/top100');
   gigapoolM.setAttribute('href','/gigapool');
 
