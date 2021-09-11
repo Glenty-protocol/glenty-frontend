@@ -18,7 +18,7 @@ const Top1: React.FC = () => {
 ]
 
   return (
-    <Page className='TopPage' style={{paddingTop: '20%',width:'100%',margin:'auto 15%'}}>
+    <Page className='TopPage' style={{paddingTop: '20%',width:'100%',margin:'auto 15%',marginTop:'5%'}}>
         <div className='Topgrid' style={{width: '60%', display:'grid',gridTemplateColumns:'100% 60%', gridGap:'5%',marginTop:'-30%'}}>
           <Top100 />
               <img src='./images/Fichier 5.svg' alt='top5'/>

@@ -65,8 +65,8 @@ window.onload = ()=>{
    homel.setAttribute("href", "/")
    linkl1.setAttribute("href", "https://exchange.glenty.com/#/swap")
    linkl2.setAttribute("href", "https://exchange.glenty.com/#/pool")
-   farmsl.setAttribute("href", "/farms")
-   gigapooll.setAttribute("href", "/gigapool")
+   farmsl.setAttribute("href", "https://glenty.com/farms")
+   gigapooll.setAttribute("href", "https://giga.glenty.com")
    githubl.setAttribute("href", "https://github.com/glenty-protocol")
    docsl.setAttribute("href", "https://glenty.gitbook.io/glenty/")
 
@@ -170,9 +170,9 @@ function mobileC(){
     window.location.replace('/')
   })
   document.querySelector('nav button').click();
-  setTimeout(document.querySelector('#root').appendChild(document.querySelector('.price')), 500);
-  setTimeout(document.querySelector('nav button').click(), 1000);
-  setTimeout(  document.querySelector('nav button').remove(), 1500);
+  setTimeout(document.querySelector('.price')?document.querySelector('#root').appendChild(document.querySelector('.price')):false, 2000);
+  setTimeout(document.querySelector('nav button').click(), 2500);
+  setTimeout(  document.querySelector('nav button').remove(), 3000);
   window.onscroll = function() {hideNav()};
 
   function hideNav() {
@@ -185,7 +185,7 @@ function mobileC(){
   
   /*home*/
   window.location.pathname === '/'? homeMc():false
-  window.location.href.includes('gigapool')?gigapoolPage():false
+ /* window.location.href.includes('gigapool')?gigapoolPage():false*/
   window.location.href.includes('top100')?top100Page():false
   window.location.href.includes('farms')?farmPage():false
 
@@ -248,7 +248,7 @@ document.querySelector('.icons').style.float='';
 
 }
 
-function gigapoolPage(){
+/*function gigapoolPage(){
 document.querySelector('.headergigapool').remove();
 document.querySelector('.PageCon').style.margin='auto';
 document.querySelector('.GigapoolCon').style.width='100%';
@@ -283,7 +283,7 @@ for(let i=2;i < coins.length;i++){
 }
 buildCoinsG();
 buildCoinsO();
-/*search*/
+
 document.querySelector('.searcho').style.display='';
 document.querySelector('.searcho').addEventListener('keyup',function(){
 const searchbox = document.querySelector('input.searcho');
@@ -301,10 +301,9 @@ for(let i =0; i < Cnames.length; i++){
 }
 })
 
-}
+}*/
 
-function buildCoinsG(){
-/*list*/
+/*function buildCoinsG(){
 const list =
 [{name:'Bitcoin',title:'BTC',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/bitcoin-btc-logo.svg',contract:'0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c'},
 {name:'Ethereum',title:'ETH',ARP:'0%',earned:'0',stacked:'0',img:'./images/gigapoolIcons/ethereum-eth-logo.svg',contract:'0x2170ed0880ac9a755fd29b2688956bd959f933f8'},
@@ -438,10 +437,9 @@ for(let i=0;i < list.length;i++){
 .appendChild(div);
 
 }
-}
+}*/
 
-function buildCoinsO(){
-/*list*/
+/*function buildCoinsO(){
 const list =[
   {name:'top100',img:'./images/top100.svg',ARP:'0%',earned:'0',stacked:'0'},
   {name:'testname',img:'./images/top100.svg',ARP:'0%',earned:'0',stacked:'0'},
@@ -495,7 +493,7 @@ const list =[
 .appendChild(div);
 
 }
-}
+}*/
 function homeMc(){
       /*home main */
   document.querySelector('.cont2').childNodes[1].style.marginBottom = '150px';
@@ -539,8 +537,8 @@ function createFooter(){
 
 
   TradeM.setAttribute('href','https://exchange.glenty.com/#/swap');
-  Top100M.setAttribute('href','/top100');
-  gigapoolM.setAttribute('href','/gigapool');
+  Top100M.setAttribute('href','https://glenty.com/top100');
+  gigapoolM.setAttribute('href','https://giga.glenty.com');
 
 
   const tradeImg = document.createElement('img');
@@ -613,8 +611,8 @@ function createMenuFooter(){
 
   githubM.setAttribute('href','https://github.com/glenty-protocol');
   docsM.setAttribute('href','https://glenty.gitbook.io/glenty/');
-  ipoM.setAttribute('href','/ico');
-  FarmsM.setAttribute('href','/farms');
+  ipoM.setAttribute('href','https://glenty.com/ico');
+  FarmsM.setAttribute('href','https://glenty.com/farms');
 
 
   const githubImg = document.createElement('img');
