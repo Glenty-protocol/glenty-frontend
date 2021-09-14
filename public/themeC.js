@@ -40,7 +40,6 @@ window.onload = ()=>{
   const gigapool = document.createElement("div")
   const github = document.createElement("div")
   const docs = document.createElement("div")
-  const drop = document.createElement('div')
 
   const homel = document.createElement("a")
   const tradel = document.createElement("a")
@@ -48,9 +47,7 @@ window.onload = ()=>{
   const gigapooll = document.createElement("a")
   const githubl = document.createElement("a")
   const docsl = document.createElement("a")
-  const linkl1 = document.createElement("a")
-  const linkl2 = document.createElement("a")
-
+ 
 
    homel.innerHTML= 'Home'
    tradel.innerHTML= 'Trade'
@@ -58,8 +55,6 @@ window.onload = ()=>{
    gigapooll.innerHTML= 'Giga Pool'
    githubl.innerHTML= 'Github'
    docsl.innerHTML= 'Docs'
-   linkl1.innerHTML= 'Exchange'
-   linkl2.innerHTML= 'Liquidity'
 
 
    homel.setAttribute("href", "/")
@@ -75,7 +70,6 @@ window.onload = ()=>{
    gigapooll.setAttribute("class", "nav-links")
    githubl.setAttribute("class", "nav-links")
    docsl.setAttribute("class", "nav-links")
-  
 
 
    home.appendChild(homel)
@@ -84,7 +78,8 @@ window.onload = ()=>{
    gigapool.appendChild(gigapooll)
    github.appendChild(githubl)
    docs.appendChild(docsl)
- 
+
+
    const heade = document.createElement('div')
    const nav = document.querySelector('nav')
    const panel = document.querySelector("a[href='https://twitter.com/glenty_com']").parentElement.parentElement.parentElement
@@ -108,11 +103,10 @@ window.onload = ()=>{
 
    nav.insertBefore(heade, nav.childNodes[1])
    heade.classList.add('header-grid')
-   const price = panel.querySelector('div').querySelector('a')
 
   document.querySelector('nav').style.borderBottom='none';
   document.querySelector('nav').style.top='0';
-  document.querySelector('#root div').querySelectorAll('div')[17].style.backgroundColor='transparent';
+  document.querySelector('#root div').querySelectorAll('div')[17].parentElement.style.background='transparent';
   nav.lastChild.querySelectorAll('button')[26].style.backgroundColor= 'white';
   nav.lastChild.querySelectorAll('button')[26].style.color= 'black';
   nav.lastChild.querySelectorAll('button')[26].style.fontWeight= 'normal';
