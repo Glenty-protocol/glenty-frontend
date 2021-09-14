@@ -43,7 +43,7 @@ window.onload = ()=>{
   const drop = document.createElement('div')
 
   const homel = document.createElement("a")
-  const tradel = document.createElement("button")
+  const tradel = document.createElement("a")
   const farmsl = document.createElement("a")
   const gigapooll = document.createElement("a")
   const githubl = document.createElement("a")
@@ -63,8 +63,7 @@ window.onload = ()=>{
 
 
    homel.setAttribute("href", "/")
-   linkl1.setAttribute("href", "https://exchange.glenty.com/#/swap")
-   linkl2.setAttribute("href", "https://exchange.glenty.com/#/pool")
+   tradel.setAttribute("href", "https://exchange.glenty.com/#/swap")
    farmsl.setAttribute("href", "https://glenty.com/farms")
    gigapooll.setAttribute("href", "https://giga.glenty.com")
    githubl.setAttribute("href", "https://github.com/glenty-protocol")
@@ -72,26 +71,20 @@ window.onload = ()=>{
 
    homel.setAttribute("class", "nav-links")
    tradel.setAttribute("class", "nav-links")
-   trade.setAttribute("class", "dropiv")
-   tradel.setAttribute("class", "dropbtn")
    farmsl.setAttribute("class", "nav-links")
    gigapooll.setAttribute("class", "nav-links")
    githubl.setAttribute("class", "nav-links")
    docsl.setAttribute("class", "nav-links")
-   drop.setAttribute("class", "dropdown-content")
+  
 
 
    home.appendChild(homel)
    trade.appendChild(tradel)
-   trade.appendChild(drop)
    farms.appendChild(farmsl)
    gigapool.appendChild(gigapooll)
    github.appendChild(githubl)
    docs.appendChild(docsl)
-   drop.appendChild(linkl1)
-   drop.appendChild(linkl2)
-
-
+ 
    const heade = document.createElement('div')
    const nav = document.querySelector('nav')
    const panel = document.querySelector("a[href='https://twitter.com/glenty_com']").parentElement.parentElement.parentElement
