@@ -21,7 +21,6 @@ const Top1: React.FC = () => {
     <Page className='TopPage' style={{paddingTop: '20%',width:'100%',margin:'auto 15%',marginTop:'5%'}}>
         <div className='Topgrid' style={{width: '60%', display:'grid',gridTemplateColumns:'100% 60%', gridGap:'5%',marginTop:'-30%'}}>
           <Top100 />
-              <img src='./images/Fichier 5.svg' alt='top5'/>
           </div>
           <div className='table' style={{display:'grid',height:'1050px',marginTop:'30px'}}>
             <div style={{display:'grid',gridTemplateColumns:"40% 20% 20% 10% 10%",backgroundColor:'rgba(120, 140, 255, 0.9)',height:'50%',paddingTop:'4%',borderTopRightRadius: '20px',borderTopLeftRadius: '20px',marginBottom:'5%'}}>
@@ -37,7 +36,6 @@ const Top1: React.FC = () => {
             <div className='coinTop100'>
               <span>{top100List.indexOf(coin) + 1}</span>
               <span style={{marginLeft:'10%'}}>|</span>
-              
               <img className='tableImg' src={coin.img} alt={coin.name} />
               <span className='coinNameTable' style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>
                 {coin.title}

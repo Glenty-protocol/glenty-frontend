@@ -64,7 +64,7 @@ const Top100 = () => {
           <br /><br />
           <div style={{color:'grey',fontSize:'18pt'}}>Buy Price: <br />800 BNB</div>
           <br />
-          <div style={{ fontSize: '11px',color:'grey' }}>{`You must send ${count * 800} BNB for ${count} TOP100`}</div>
+          <div style={{ fontSize: '11px',color:'grey' }}>{`You must send ~ ${count * 800} BNB for ${count} TOP100`}</div>
         </div>
       </div>
     </div>

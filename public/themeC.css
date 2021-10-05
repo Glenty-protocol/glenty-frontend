@@ -389,7 +389,7 @@ tr td:last-child { border-bottom-right-radius: 20px; }
   height:100px;
   margin-top:-10%;
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:600px){
   .tableH6Header{
     font-size: 10pt;
   }
@@ -435,4 +435,32 @@ tr td:last-child { border-bottom-right-radius: 20px; }
   .homeSmallBig{
     font-size: small !important;
   }
+  #loading img{
+    margin-left: -30% !important;
+    margin-top: 50% !important;
+  }
+  .price{
+    padding: 7px 25px !important;
+  }
+.price img{display: none;}
+.price div{
+  font-size: 15pt !important;
+}
+}
+#loading{
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed !important;
+  display: block;
+  background-color: black;
+  z-index: 999999999999;
+  text-align: center;
+  justify-content: center;
+}
+#loading img{
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  margin-top: 20%;
+  margin-left: -8%;
 }

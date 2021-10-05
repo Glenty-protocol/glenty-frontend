@@ -82,7 +82,7 @@ const Glenty = () => {
           <br /><br />
           <div className='homeSmallBig'>1 GLENTY = 0.20 USD for early bird</div>
           <br />
-          <div style={{ fontSize: '11px' }}>{`You must send ${count / 990} BNB for ${count} GLENTY`}</div>
+          <div style={{ fontSize: '11px' }}>{`You must send ~ ${count / 990} BNB for ${count} GLENTY`}</div>
         </div>
       </div>
     </div>

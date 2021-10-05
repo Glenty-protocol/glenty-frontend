@@ -49,7 +49,7 @@ window.onload = ()=>{
   const docsl = document.createElement("a")
  
 
-   homel.innerHTML= 'Home'
+   homel.innerHTML= 'Top100'
    tradel.innerHTML= 'Trade'
    farmsl.innerHTML= 'Farms'
    gigapooll.innerHTML= 'Giga Pool'
@@ -57,7 +57,7 @@ window.onload = ()=>{
    docsl.innerHTML= 'Docs'
 
 
-   homel.setAttribute("href", "/")
+   homel.setAttribute("href", "/top100")
    tradel.setAttribute("href", "https://exchange.glenty.com/#/swap")
    farmsl.setAttribute("href", "https://glenty.com/farms")
    gigapooll.setAttribute("href", "https://giga.glenty.com")
@@ -89,9 +89,10 @@ window.onload = ()=>{
    
    nav.childNodes[1].insertBefore(lang, nav.childNodes[1].querySelector('div'))
   panel.style.backgroundColor = 'transparent';
-   heade.appendChild(home)
+ 
    heade.appendChild(trade)
    heade.appendChild(farms)
+   heade.appendChild(home)
    heade.appendChild(gigapool)
    heade.appendChild(github)
    heade.appendChild(docs)
@@ -128,7 +129,7 @@ window.onload = ()=>{
     }
   }, 3000);
   
-  
+ 
 }
 
 /*mobile*/
@@ -156,10 +157,10 @@ function mobileC(){
  logoM.addEventListener('click',function(){
     window.location.replace('/')
   })
-  document.querySelector('nav button').click();
+  setTimeout(document.querySelector('nav button').click(),100);
   setTimeout(document.querySelector('.price')?document.querySelector('#root').appendChild(document.querySelector('.price')):false, 2000);
-  setTimeout(document.querySelector('nav button').click(), 2500);
-  setTimeout(  document.querySelector('nav button').remove(), 3000);
+  setTimeout(document.querySelector('nav button').click(), 3000);
+  setTimeout(  document.querySelector('nav button').remove(), 3500);
   window.onscroll = function() {hideNav()};
 
   function hideNav() {
@@ -189,6 +190,7 @@ function mobileC(){
   /*ipo page*/
   window.location.href.includes('ico')?icoPage():false
   }
+  
 }
 
 function farmPage(){
@@ -586,57 +588,47 @@ function createMenuFooter(){
   const docsM = document.createElement('a');
   const githubM = document.createElement('a');
   const FarmsM = document.createElement('a');
-  const ipoM = document.createElement('a');
 
 
 
   docsM.classList.add('moreLinks');
   githubM.classList.add('moreLinks');
   FarmsM.classList.add('moreLinks');
-  ipoM.classList.add('moreLinks');
 
 
   githubM.setAttribute('href','https://github.com/glenty-protocol');
   docsM.setAttribute('href','https://glenty.gitbook.io/glenty/');
-  ipoM.setAttribute('href','https://glenty.com/ico');
   FarmsM.setAttribute('href','https://glenty.com/farms');
 
 
   const githubImg = document.createElement('img');
   const docsImg = document.createElement('img');
   const farmsImg = document.createElement('img');
-  const ipoImg = document.createElement('img');
 
 
   docsImg.setAttribute('src','./images/DOCS.svg');
-  ipoImg.setAttribute('src','./images/IPO.svg');
   farmsImg.setAttribute('src','./images/farms.svg');
   githubImg.setAttribute('src','./images/GITHUB.svg');
 
   docsImg.classList.add('footerImg');
-  ipoImg.classList.add('footerImg');
   farmsImg.classList.add('footerImg');
   githubImg.classList.add('footerImg');
 
   const githubT = document.createElement('p');
-  const ipoT = document.createElement('p');
   const docsT = document.createElement('p');
   const farmT = document.createElement('p');
 
   githubT.innerText='Github';
   docsT.innerText='Docs';
   farmT.innerText='Farms';
-  ipoT.innerText='IPO';
 
 
   githubM.appendChild(githubImg);
   docsM.appendChild(docsImg);
-  ipoM.appendChild(ipoImg);
   FarmsM.appendChild(farmsImg);
 
 
   githubM.appendChild(githubT);
-  ipoM.appendChild(ipoT);
   docsM.appendChild(docsT);
   FarmsM.appendChild(farmT);
 
@@ -646,7 +638,6 @@ function createMenuFooter(){
   docsM.style.borderBottom='none';
 
   fixedMenuFooter.appendChild(FarmsM);
-  fixedMenuFooter.appendChild(ipoM);
   fixedMenuFooter.appendChild(githubM);
   fixedMenuFooter.appendChild(docsM);
 
