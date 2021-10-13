@@ -28,7 +28,17 @@ const Top100 = () => {
         <div style={{ color: 'white' }}>
           <b className='homeSmall' style={{lineHeight: '2'}}>Buy Top100 with BNB</b>
         </div>
-        <div role="presentation" onClick={() => {
+      </Heading>
+      <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
+        <img className='top100img' alt="top100 token" style={{ width: '50%' }} src={top100img} />
+        <div className='top100page'>
+          <div><b style={{color: 'white',fontSize: '16pt'}}>Top100 amount</b></div><br />
+          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
+          <br /><br />
+          <div style={{color:'white',fontSize:'18pt'}}>Buy Price: <br />800 BNB</div>
+          <br />
+          <div style={{ fontSize: '11px',color:'white' }}>{`You must send ~ ${count * 800} BNB for ${count} TOP100`}</div>
+          <div role="presentation" onClick={() => {
           if (account && count > 0) {
             console.log("conf", Abi as AbiItem[], config.buyContractAddressTop100);
             const buyContract = new web3.eth.Contract(
@@ -54,17 +64,7 @@ const Top100 = () => {
               t('Either connect your wallet first or make sure you buy more than 0,0000000001 tokens.'),
             )
           }
-        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '12px', width: '25%', height: '100%' }}>BUY TOP100</div>
-      </Heading>
-      <div style={{ display: 'flex', padding: '24px', justifyContent: "space-around" }}>
-        <img alt="top100 token" style={{ width: '50%' }} src={top100img} />
-        <div>
-          <div><b style={{color: 'white',fontSize: '16pt'}}>Top100 amount</b></div><br />
-          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px', fontSize: '18px', padding: '12px', width: '100%' }} placeholder="0" type="number" />
-          <br /><br />
-          <div style={{color:'grey',fontSize:'18pt'}}>Buy Price: <br />800 BNB</div>
-          <br />
-          <div style={{ fontSize: '11px',color:'grey' }}>{`You must send ~ ${count * 800} BNB for ${count} TOP100`}</div>
+        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'white', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '12px'}}>BUY TOP100</div>
         </div>
       </div>
     </div>

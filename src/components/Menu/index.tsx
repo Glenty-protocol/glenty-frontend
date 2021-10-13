@@ -19,6 +19,7 @@ const Menu = (props) => {
   return (
     <UikitMenu
       account={account}
+      className='test'
       login={login}
       logout={logout}
       isDark={isDark}

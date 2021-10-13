@@ -341,7 +341,7 @@ const Farms: React.FC = () => {
   return (
     <>
       <PageHeader>
-        <Heading as="h1" scale="xxl" color="white" mb="24px">
+        <Heading as="h1" scale="xxl" color="white" mb="24px" style={{marginTop:'25%'}}>
           {t('Farms')}
         </Heading>
         <Heading scale="lg" color="rgb(218, 165, 32)">

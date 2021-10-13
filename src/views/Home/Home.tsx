@@ -4,12 +4,10 @@ import { Heading, Text, BaseLayout } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Page from 'components/layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
-import LotteryCard from 'views/Home/components/LotteryCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
-import WinCard from 'views/Home/components/WinCard'
 import Top100 from 'views/Home/components/Top100'
 import Glenty from 'views/Home/components/Glenty'
 
@@ -85,10 +83,10 @@ const Home: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <Page style={{margin: 'auto 15%'}}>
+    <Page className='homeCont'>
       <Hero>
         <Heading as="h1" scale="xl" mb="24px" color="secondary">
-        <div style={{ fontSize : '38pt', color:'#DAA520' }}> {t('Glenty')}</div>
+        <div className='homeh1' style={{ fontSize : '38pt', color:'#DAA520' }}> {t('Glenty')}</div>
         </Heading>
         <Text><div id='secondText' style={{ color: '#DAA520', fontSize: '26px' }}>{t('The #1 index fund DEX and yield farm on Binance Smart Chain.')}</div></Text>
       </Hero>
