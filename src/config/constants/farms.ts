@@ -10,7 +10,7 @@ const farms: FarmConfig[] = [
   //   lpSymbol: 'GLENTY',
   //   lpAddresses: {
   //     97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-  //     56: '0x2B82fd7408D54fA3A5F0CEAAC06b6D8AE775357a',
+  //     56: '0x97769506e36988D08745b64E78F66E37858f14E9',
   //   },
   //   token: tokens.syrup,
   //   quoteToken: tokens.wbnb,
@@ -20,7 +20,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GLENTY-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: '0x01511e08b861053d7db7b438c8c1a585575d3cbd',
+      56: '0xfcdf033e55ca6a62300337d88da1810933a54f82',
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
@@ -34,17 +34,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
-  },
-  {
-    pid: 3,
-    lpSymbol: 'GLENTY-BUSD LP',
-    lpAddresses: {
-      97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
-    },
-    token: tokens.cake,
-    quoteToken: tokens.busd,
-  },
+  }
 
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
