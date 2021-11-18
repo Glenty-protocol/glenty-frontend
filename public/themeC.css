@@ -2,14 +2,13 @@
   font-family: montserrat !important;
   border:0 !important;
 }
-/*.langauge{
-  display: none !important;
-}*/
 #root{
-  background: url("./images/GLENTYPOOL_background_Plan de travail 1 copie 8.svg") !important;
   background-position-x: center !important;
   background-size: cover !important;
+  padding-bottom: 6%;
+  overflow-x: hidden;
 }
+
 .homeCont{
   margin: auto 15% !important;
 }
@@ -33,18 +32,18 @@ grid-template-columns: 16% 16% 16% 16% 16% 16%;
 margin-left: -8%;
   }
   .price{
-position: absolute;
-top: 150px;
-left:0;
-padding: 20px 65px 35px 30px;
-border-top-right-radius: 25px;
-border-bottom-right-radius: 25px;
-background: url('./images/gradient_price.svg');
-background-repeat: no-repeat;
-}
-.price img{
-  display: none !important;
-}
+    position: absolute;
+    top: 100px;
+    left:10px;
+    padding: 8px;
+    border: 2px solid white !important;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    }
+    .price img{
+      display: none !important;
+    }
+
   .price div{
     color: white;
     font-size: 20pt;
@@ -227,26 +226,41 @@ background-repeat: no-repeat;
     color: white;
   }
   .TopPage{
-    padding-top: 20% !important;
     width:100% !important;
     margin:auto 15% !important;
     margin-top:5% !important;
    }
    .buyGlenty{
-    padding: 60px;
+    padding: 40px;
    }
   @media only screen and (min-width:901px){
     .fixedFooter{display: none !important;
     }
+    html{
+      zoom:67%;
+    }
+    .mobileTop100{
+      display: none;
+    }
+    .TopPage{
+      padding-top: 20% !important;
+    }
+    .top100module{
+    display: grid;
+    grid-template-columns: 20% 40% 30% !important;
+    width: 70% !important;
+    grid-gap: 10% !important;
+    margin: 2% auto !important;
+    }
+    
     @media only screen and (max-width:1450px){
       .nav-links{
-        font-size: 10pt;
+        font-size: 14pt;
       }
     }
     @media only screen and (max-width:1450px){
       .homeCont{
-        margin: auto 25% !important;
-    margin-left: -2% !important;
+        margin: auto 5% !important;
       }
       #farmsCont{
         margin-left: 5% !important;
@@ -257,7 +271,7 @@ background-repeat: no-repeat;
         margin-top: 0 !important;
       }
       .TopPage{
-        margin: 5% -10% !important;
+        margin: -5% 10% !important;
       }
     }
     
@@ -300,14 +314,23 @@ background-repeat: no-repeat;
     margin: 0 -20%;
   }
   @media only screen and (max-width:900px){
-    .price{
-      top: 100px;
+    div[role=presentation],div[title=Bunny]{
+      display: none !important;
     }
     .buyGlenty{
       padding: 24px;
      }
     .gigapoolheader{
       font-size: 45pt;
+    }
+    .top100module{
+      display: grid;
+      grid-template-columns: 50% 50% !important;
+      width: 100% !important;
+      grid-gap: 0 !important;
+    }
+    .top100page{
+      width: 100% !important;
     }
   }
   .moreMenu{
@@ -325,7 +348,7 @@ background-repeat: no-repeat;
   }
   .moreLinks{
     display: grid;
-    grid-template-columns: 15% 15%;
+    grid-template-columns: 15% 35%;
     text-align: center;
     justify-content: center;
     padding-top: 40px;
@@ -343,6 +366,18 @@ background-repeat: no-repeat;
     margin: 0;
   }
   @media only screen and (max-width:900px) {
+    .tableChild{
+  padding-top: 10% !important;
+}
+.top100moduleHome{
+  display: grid;
+  grid-template-columns: 50% 50% !important;
+  width: 100% !important;
+  grid-gap: 0 !important;
+  }
+.deskTop100{
+  display: none;
+}
     .coin{
       margin-right: -25%;
     }
@@ -362,7 +397,7 @@ background-repeat: no-repeat;
      display: none !important;
    }
    #root{
-     background: url("./images/backgroundMobile.svg") !important;
+     background: url("./images/backgroundMobile.svg");
      background-position-x: center !important;
      background-size: cover !important;
    }
@@ -370,10 +405,17 @@ background-repeat: no-repeat;
      grid-template-columns: 0% !important;
    }
    .Topgrid{
-     margin-top: 40% !important;
+     margin-top: 5% !important;
    }
    .TopPage{
      margin: auto !important;
+   }
+   .coinTop100Container{
+     margin-top: -29% !important;
+   }
+   .buytitle{
+     font-size: 18pt !important;
+     text-align: left !important;
    }
   }
 
@@ -438,17 +480,18 @@ tr{
   background: #280D5F;
 }
 td { border: solid 1px #280D5F; }
-tr td:first-child { border-top-left-radius: 20px; }
-tr td:last-child { border-top-right-radius: 20px; }
-tr td:first-child { border-bottom-left-radius: 20px; }
-tr td:last-child { border-bottom-right-radius: 20px; }
+tr td:first-child div,tr td:first-child { border-top-left-radius: 20px; }
+tr td:last-child div,tr td:last-child { border-top-right-radius: 20px; }
+tr td:first-child div,tr td:first-child { border-bottom-left-radius: 20px; }
+tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 
 .tableChild{
   display:grid;
-  grid-template-columns:40% 30% 20% 10%;
-  background-color:rgba(120, 140, 255, 0.9);
+  grid-template-columns:45% 30% 20%;
+  background-color:#030e33;
   height:50%;
-  padding-top:4%;
+  padding-top:5%;
+  padding-bottom: 8%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin-bottom:4%
@@ -484,10 +527,10 @@ tr td:last-child { border-bottom-right-radius: 20px; }
 }
 .coinTop100Container{
   display:grid;
-  grid-template-columns:50% 20% 20% 10%;
+  grid-template-columns:45% 30% 25%;
   background-color:rgba(49, 39, 131, 0.9);
   height:100px;
-  margin-top:-10%;
+  margin-top:-14.5%;
 }
 #price{
   font-size: 14pt;
@@ -502,6 +545,10 @@ tr td:last-child { border-bottom-right-radius: 20px; }
 @media only screen and (max-width:600px){
   .tableChild{
     margin-bottom: 10%;
+    grid-template-columns: 45% 30% 25%;
+  }
+  .coinTop100Container{
+    grid-template-columns: 47% 25% 25%;
   }
   .tableH6Header{
     font-size: 10pt;
@@ -551,6 +598,7 @@ tr td:last-child { border-bottom-right-radius: 20px; }
   }
   #secondText{
     width: 160%;
+    margin-top: -45%;
     margin-left: -30%;
   }
   .homeSmall{
@@ -563,13 +611,6 @@ tr td:last-child { border-bottom-right-radius: 20px; }
     margin-left: -30% !important;
     margin-top: 50% !important;
   }
-  .price{
-    padding: 7px 25px !important;
-  }
-.price img{display: none;}
-.price div{
-  font-size: 15pt !important;
-}
 }
 #loading{
   width: 100% !important;
@@ -598,7 +639,7 @@ tr td:last-child { border-bottom-right-radius: 20px; }
 
 @media only screen and (min-height:700px){
   @media only screen and (max-height:925px){
-    .table{height: 1100vh;}
+    .table{height: 1200vh;}
   }
 }
 @media only screen and (min-height:400px){
@@ -621,3 +662,34 @@ nav button:last-child{
     border-radius: 20px !important;
 }
 
+
+.buytitle{
+  font-size: 24pt;
+  text-align: center;
+}
+
+.phonePrice{
+  padding: 1%;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white !important;
+}
+.top100moduleHome{
+  display: grid;
+  grid-template-columns: 40% 30%;
+  width: 70% ;
+  grid-gap: 20%;
+  margin: 2%;
+  }
+  .farmsTable table td button{
+    background-color: rgb(218,165,32) !important;
+  }
+  .farmsTable tr td div{
+    background-color: #280D5F !important;
+  }
+  .farmsTable tr td div a,.farmsTable tr td div span{
+color: white;
+  }
+  #buypricelite{
+    font-family:Kanit !important;
+  }

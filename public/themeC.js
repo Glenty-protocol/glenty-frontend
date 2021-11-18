@@ -4,22 +4,12 @@ window.onload = ()=>{
   document.querySelector('a').addEventListener('click',function(){
     window.location.replace('https://glenty.com')
   })
-
+  
   if(window.location.href.includes('/top100')){
+    document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
     document.querySelector('#root').style.backgroundRepeat= 'no-repeat'
-    document.querySelector('#root').style.backgroundPosition= 'center'
     document.querySelector('.top100page').style.paddingTop='7%'
     document.querySelector('.top100img').style.paddingBottom='1.5%'
-    document.querySelectorAll('.tableImg')[1].style.width='40px'
-
-  }
-  if(window.location.href.includes('/gigapool') || window.location.href.includes('/top100')){
-    if(window.innerWidth <= 1300){
-      document.querySelector('#root').style.height= '1680vh'
-    }else{
-false
-    }
- 
   }
   function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -29,6 +19,7 @@ false
       document.querySelector('nav').style.background = "none";
     }
   }
+  
  window.innerWidth > 900 ? 
   window.onscroll = function() {myFunction()} :false
   const home = document.createElement("div")
@@ -80,7 +71,6 @@ false
    const heade = document.createElement('div')
    const nav = document.querySelector('nav')
    const panel = document.querySelector("a[href='https://twitter.com/glenty_com']").parentElement.parentElement.parentElement
-   const social = document.querySelector('.socialL')
 
    const lang = panel.querySelectorAll('div')[6]
    
@@ -110,15 +100,14 @@ false
   window.location.href.includes('farms')?document.querySelector('h1').parentElement.offsetParent.setAttribute('id',"farmsCont"):false
 
   window.setInterval(function(){
-    if(true){
-      document.querySelector('#root').appendChild(social);
+    if(document.querySelector('.price')){
       document.querySelector('.price').parentElement.parentElement.style.display='flex'
-
     }
-  }, 1000);
+  }, 50);
   
   createFooter();
   createMenuFooter();
+  getSocial();
 }
 
 
@@ -126,19 +115,14 @@ false
 function mobileC(){
   window.onload = ()=>{ 
   document.querySelector('nav').style.border='none';
-  document.querySelector('nav').lastChild.querySelector('button').style.backgroundColor= 'white';
-  document.querySelector('nav').lastChild.querySelector('button').style.color= '#312783';
-  document.querySelector('nav').lastChild.querySelector('button').style.fontWeight= 'normal';
-  document.querySelector('nav').lastChild.querySelector('button').style.letterSpacing= '0.11em';
+ 
   const logoM = document.createElement('img');
   logoM.setAttribute("src", "./images/GLENTY_WHITE_LOGO.png");
   document.querySelector('nav').insertBefore(logoM, document.querySelector('nav').firstChild);
   logoM.classList.add('logo-phone')
-  logoM.style.height='100%';
-  logoM.style.width='150px';
+  logoM.style.height='70%';
+  logoM.style.width='110px';
   logoM.style.marginTop='10px';
-  setTimeout(document.querySelector('nav button').click(),100);
-  setTimeout(document.querySelector('.price')?document.querySelector('#root').appendChild(document.querySelector('.price')):false, 2000);
   setTimeout(document.querySelector('nav button').click(), 3000);
   setTimeout(  document.querySelector('nav button').remove(), 3500);
   window.onscroll = function() {hideNav()};
@@ -153,8 +137,12 @@ function mobileC(){
       document.querySelector("nav").style.display = "flex";
     }
   }
+  document.querySelector('nav div').classList.add('phonePrice');
+  setTimeout(function(){
+    document.querySelector('.price')?document.querySelector('nav div').innerText=document.querySelector('.price').innerText:document.querySelector('nav div').style.display='none';
+  },3000)
   
-  
+
   window.location.pathname === '/'? homeMc():false
   window.location.href.includes('top100')?top100Page():false
   window.location.href.includes('farms')?farmPage():false
@@ -168,9 +156,7 @@ function mobileC(){
     document.querySelector('.moreMenu').style.display='none':
     document.querySelector('.moreMenu').style.display='grid'
   })
-
  
-  window.location.href.includes('ico')?icoPage():false
   }
   
 }
@@ -185,7 +171,9 @@ document.querySelector('#root').style.backgroundPositionY='bottom';
 document.querySelector('table').offsetParent.parentElement.style.background='transparent'
 document.querySelectorAll('button')[2].remove()
 for(let i = 0; i < document.querySelectorAll('td img').length; i++){
-  document.querySelectorAll('td img')[i].style.top = '0'
+  document.querySelectorAll('td img')[i].parentElement.style.height = '40px'
+  document.querySelectorAll('td img')[i].parentElement.style.width = '40px'
+
 }
 const coinsFarm = document.querySelectorAll('tr');
 for(let i=0; i < coinsFarm.length; i++){
@@ -227,18 +215,15 @@ function homeMc(){
   document.querySelector('.mobile-container').childNodes[1].childNodes[2].style.marginTop='10px';
 }
 function top100Page(){
+document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
 document.querySelector('.TopPage').style.margin='0px';
-document.querySelector('.TopPage').style.paddingTop='55%';
 document.querySelector('.Topgrid').style.width='100%';
 document.querySelector('.Topgrid').style.gridTemplateColumns='100%';
-document.querySelectorAll('img')[4].style.marginBottom='10%'; 
-document.querySelector('.coinTop100Container').style.marginTop='-13%';
+//document.querySelectorAll('img')[4].style.marginBottom='10%'; 
 document.querySelector('.tableH1').style.fontSize='14pt';
 document.querySelector('.qunat').innerText='Quantity';
-document.querySelector('.tableImg').style.width='100%';
-document.querySelectorAll('.tableImg')[1].style.width='40px'
-
-
+//document.querySelector('.tableImg').style.width='100%';
+//document.querySelectorAll('.tableImg')[1].style.width='40px'
 for(let i=0;i < document.querySelectorAll('.coinTop100').length;i++){
   document.querySelectorAll('.coinTop100')[i].style.gridTemplateColumns='15% 10% 10% 20%';
   document.querySelectorAll('.coinTop100 img')[i].style.margin='15% 10% 10% 20%-30% 1px';
@@ -352,7 +337,7 @@ function createMenuFooter(){
   const farmT = document.createElement('p');
 
   githubT.innerText='Github';
-  docsT.innerText='Docs';
+  docsT.innerText='White paper';
   farmT.innerText='Farms';
 
 
@@ -375,10 +360,14 @@ function createMenuFooter(){
 
   document.querySelector('#root').appendChild(fixedMenuFooter);
 }
-  window.innerWidth < 900 ? mobileC() : false
-
   const windowWidth = window.innerWidth
 
   window.onresize = ()=>{
     window.innerWidth !== windowWidth ? location.reload():false
+  }
+  window.innerWidth < 900 ? mobileC() : false
+
+  function getSocial(){
+    const social = document.querySelector('.socialL');
+    document.querySelector('#root').appendChild(social.parentElement);
   }

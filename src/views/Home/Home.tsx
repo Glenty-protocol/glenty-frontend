@@ -8,7 +8,7 @@ import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
-import Top100 from 'views/Home/components/Top100'
+import Top100 from 'views/Home/components/Top100Home'
 import Glenty from 'views/Home/components/Glenty'
 
 const Hero = styled.div`

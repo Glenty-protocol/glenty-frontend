@@ -9,7 +9,6 @@ declare module 'styled-components' {
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Kanit', sans-serif;
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
@@ -20,10 +19,9 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   #root {
-    background: url(/images/pan-bg2.svg) aliceblue;
+    background: url('./images/GLENTYPOOL_background_Plan de travail 1 copie 8.svg') aliceblue;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:bottom;
   }
   input:focus, textarea:focus, select:focus{
     outline: none;

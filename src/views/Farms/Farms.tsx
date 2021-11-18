@@ -308,7 +308,7 @@ const Farms: React.FC = () => {
         sortable: column.sortable,
       }))
 
-      return <Table data={rowData} columns={columns} userDataReady={userDataReady} />
+      return <div className='farmsTable'><Table data={rowData} columns={columns} userDataReady={userDataReady} /></div>
     }
 
     return (
