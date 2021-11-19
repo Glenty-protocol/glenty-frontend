@@ -162,7 +162,6 @@ function mobileC(){
 }
 
 function farmPage(){
-document.querySelector('#root div').querySelectorAll('div')[9].style.marginTop = '35%';
 document.querySelector('h1').style.textAlign='center';
 document.querySelector('h2').style.textAlign='center';
 document.querySelector('table').style.borderSpacing='0px 15px';
@@ -241,6 +240,7 @@ function createFooter(){
   TradeM.classList.add('footerLinks');
   Top100M.classList.add('footerLinks');
   MoreM.classList.add('footerLinks');
+  MoreM.classList.add('footermore');
   gigapoolM.classList.add('footerLinks');
 
 
@@ -297,7 +297,7 @@ function createFooter(){
   fixedFooter.appendChild(gigapoolM);
   fixedFooter.appendChild(Top100M);
   fixedFooter.appendChild(MoreM);
-  document.querySelector('#root').appendChild(fixedFooter);
+  document.querySelector('body').appendChild(fixedFooter);
 }
 
 function createMenuFooter(){
@@ -371,3 +371,6 @@ function createMenuFooter(){
     const social = document.querySelector('.socialL');
     document.querySelector('#root').appendChild(social.parentElement);
   }
+  document.querySelector('#root').addEventListener('click',function(){
+    document.querySelector('.moreMenu').style.display='none'
+  })
