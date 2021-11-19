@@ -298,6 +298,9 @@ function createFooter(){
   fixedFooter.appendChild(Top100M);
   fixedFooter.appendChild(MoreM);
   document.querySelector('body').appendChild(fixedFooter);
+  document.querySelector('#root').addEventListener('click',function(){
+  document.querySelector('.moreMenu').style.display='none'
+  })
 }
 
 function createMenuFooter(){
@@ -371,6 +374,4 @@ function createMenuFooter(){
     const social = document.querySelector('.socialL');
     document.querySelector('#root').appendChild(social.parentElement);
   }
-  document.querySelector('#root').addEventListener('click',function(){
-    document.querySelector('.moreMenu').style.display='none'
-  })
+  
