@@ -61,23 +61,23 @@ const Glenty = () => {
         </div>
 
         <div className='top100page'>
-          <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>Glenty amount</b></div><br />
+          <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>BNB amount</b></div><br />
 
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>From</div>
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-30px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" />
-          <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/Fichier 1.svg' style={{width:'35px',marginTop:'40px'}} />
-          <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>Glenty</div>
+          <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/binance-coin-bnb-logo.svg' style={{width:'35px',marginTop:'30px'}} />
+          <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>BNB</div>   
           <br /><br />
           </div>
           <br /><br />
 
-          <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>BNB amount</b></div><br />
+          <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>Glenty amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>To</div>
           <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-15px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" disabled value={count * (0.2 / bnbpriceg)} />
-          <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/binance-coin-bnb-logo.svg' style={{width:'35px',marginTop:'30px'}} />
-          <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>BNB</div>
+          <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/Fichier 1.svg' style={{width:'35px',marginTop:'40px'}} />
+          <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>Glenty</div>
           <br /><br />
           </div>
 <br /><br /><br />
@@ -93,7 +93,7 @@ const Glenty = () => {
             .buyTokens(account)
             .send({
               from: account,
-              value: web3.utils.toWei((count/990).toString(), "ether"),
+              value: web3.utils.toWei((count).toString(), "ether"),
               gas: "220000",
             })
             .on("receipt", function (data, error) {
