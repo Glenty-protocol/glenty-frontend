@@ -393,7 +393,7 @@ margin-left: -8%;
    .table{
      margin-bottom: 150px;
    }
-   .price,.socialL,.header-grid,.homeh1{
+   .price,.socialL,.header-grid,.homeh1,#secondText{
      display: none !important;
    }
    #root{
@@ -403,6 +403,9 @@ margin-left: -8%;
    }
    .mobile-container{
      grid-template-columns: 0% !important;
+   }
+   .mobile-container:first-child{
+    margin-top: -50% !important;
    }
    .Topgrid{
      margin-top: 5% !important;
@@ -602,7 +605,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     margin-left: -30%;
   }
   .homeSmall{
-    font-size: smaller !important;
+    font-size: 16pt !important;
   }
   .homeSmallBig{
     font-size: small !important;
@@ -644,7 +647,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 }
 @media only screen and (min-height:400px){
   @media only screen and (max-height:699px){
-    .table{height: 1300vh;}
+    .table{height: 1400vh;}
   }
 }
 button[aria-label='Toggle menu']{
