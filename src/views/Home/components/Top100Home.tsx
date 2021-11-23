@@ -63,6 +63,7 @@ const Top100 = () => {
                     >
                       <ArrowDownIcon color="primary" width="24px" />
                     </IconButton>
+                    <br/>
           <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>Top100 amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>To</div>
