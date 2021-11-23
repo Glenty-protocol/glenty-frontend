@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react'
-import { Card, CardBody, Heading, Text } from '@pancakeswap/uikit'
+import { Card, CardBody, Heading, Text,ArrowDownIcon, IconButton } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import useWeb3 from 'hooks/useWeb3'
@@ -54,8 +54,15 @@ const Top100 = () => {
           <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>BNB</div>
           <br /><br />
           </div>
-          <br /><br />
-
+          <br />
+          <IconButton
+                      variant="tertiary"
+                      style={{ borderRadius: '50%',display:'block',margin:'auto',background:"rgb(255, 204, 51)" }}
+                      size="sm"
+                    >
+                      <ArrowDownIcon color="primary" width="24px" />
+                    </IconButton>
+                    <br />
           <div><b style={{color: 'white',fontSize: '16pt'}}>Top100 amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>To</div>
