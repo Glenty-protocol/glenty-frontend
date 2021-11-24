@@ -74,10 +74,10 @@ const Glenty = () => {
           <br /><br />
                     <IconButton
                       variant="tertiary"
-                      style={{ borderRadius: '50%',display:'block',margin:'auto',background:"rgb(255, 204, 51)" }}
+                      style={{ borderRadius: '50%',display:'block',margin:'auto',background:"transparent" }}
                       size="sm"
                     >
-                      <ArrowDownIcon color="primary" width="24px" />
+                      <ArrowDownIcon color="gray" width="24px" />
                     </IconButton>
                     <br/>
           <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>Glenty amount</b></div><br />

@@ -681,7 +681,7 @@ nav button:last-child{
   display: grid;
   grid-template-columns: 40% 30%;
   width: 70% ;
-  grid-gap: 20%;
+  grid-gap: 15%;
   margin: 2%;
   }
   .farmsTable table td button{
@@ -697,3 +697,8 @@ color: white;
     font-family:Kanit !important;
   }
   
+  @media only screen and (min-width:1900px){
+    .homeCont,.TopPage{
+      margin: auto 25% !important;
+    }
+  }
