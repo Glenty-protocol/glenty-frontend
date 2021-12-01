@@ -33,7 +33,6 @@ const Top1: React.FC = () => {
               <div className='coinTop100Container' key={coin.id}>
             <div className='coinTop100'>
               <span>{dataCoin.indexOf(coin) + 1}</span>
-              <span style={{marginLeft:'10%'}}>|</span>
               <img className='tableImg' src={coin.image} alt={coin.name} />
               <span className='coinNameTable' style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>
                 {coin.symbol.toUpperCase()}

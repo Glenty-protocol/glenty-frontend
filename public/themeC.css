@@ -532,6 +532,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
   display:grid;
   grid-template-columns:45% 30% 25%;
   background-color:rgba(49, 39, 131, 0.9);
+  border-bottom: 3px solid #768afd !important;
   height:100px;
   margin-top:-14.5%;
 }
@@ -557,7 +558,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     font-size: 10pt;
   }
   .coinTop100{
-    grid-template-columns: 25% 10% 20% 15% !important;
+    grid-template-columns: 25% 30% 15% !important;
   }
   .table{
     display:grid;
