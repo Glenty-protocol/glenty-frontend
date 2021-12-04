@@ -413,9 +413,6 @@ margin-left: -8%;
    .TopPage{
      margin: auto !important;
    }
-   .coinTop100Container{
-     margin-top: -29% !important;
-   }
    .buytitle{
      font-size: 18pt !important;
      text-align: left !important;
@@ -492,18 +489,16 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
   display:grid;
   grid-template-columns:45% 30% 20%;
   background-color:#030e33;
-  height:50%;
   padding-top:5%;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  margin-bottom:4%
 }
 .coinTop100{
   padding-left:3%;
   color:white;
   font-size:20pt;
-  margin-top:30px;
+  margin-top:15px;
   font-weight:lighter;
   display:grid;
   grid-template-columns:10% 10% 10% 20%;
@@ -517,13 +512,13 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 }
 .info{
   color:white;
-  margin-top:30px;
+  margin-top:15px;
   font-size:20pt;
   font-weight:lighter;
 }
 .infoCenter{
   color:white;
-  margin-top:30px;
+  margin-top:15px;
   font-size:20pt;
   text-align:center;
   font-weight:lighter;
@@ -533,8 +528,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
   grid-template-columns:45% 30% 25%;
   background-color:rgba(49, 39, 131, 0.9);
   border-bottom: 3px solid #768afd !important;
-  height:100px;
-  margin-top:-14.5%;
+  padding: 15px 0px;
 }
 #price{
   font-size: 14pt;
@@ -548,7 +542,6 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 }
 @media only screen and (max-width:600px){
   .tableChild{
-    margin-bottom: 10%;
     grid-template-columns: 45% 30% 25%;
   }
   .coinTop100Container{
@@ -569,7 +562,6 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     font-size: 8pt;
   }
   .tableImg{
-    height: 50% !important;
     margin: -10% 1px !important;
     background-color: white;
     border-radius: 50%;

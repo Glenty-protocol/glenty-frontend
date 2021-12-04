@@ -8,6 +8,7 @@ window.onload = ()=>{
   if(window.location.href.includes('/top100')){
     document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
     document.querySelector('#root').style.backgroundRepeat= 'no-repeat'
+    document.querySelector('#root').style.paddingBottom= '90%'
     document.querySelector('.top100page').style.paddingTop='7%'
     document.querySelector('.top100img').style.paddingBottom='1.5%'
   }

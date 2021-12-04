@@ -3,7 +3,7 @@ import Page from 'components/layout/Page'
 import Top100 from 'views/Home/components/Top100'
 
 let dataCoin = [];
-let marketcaptotal = 1;
+let marketcaptotal = 2391233413354;
 fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')          
 .then(res=>res.json())
 .then(data=>{
@@ -19,7 +19,7 @@ fetch('https://cap.glenty.com/marketcap')
 console.log(dataCoin)
 const Top1: React.FC = () => {
   return (
-    <Page className='TopPage'>
+    <Page className='TopPage' style={{paddingBottom:'8%'}}>
         <div className='Topgrid'>
           <Top100 />
           </div>
