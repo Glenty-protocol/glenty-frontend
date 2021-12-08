@@ -212,7 +212,7 @@ function homeMc(){
   document.querySelector('.cont2').childNodes[1].style.marginBottom = '150px';
   document.querySelector('.mobile-container').querySelector('br').remove();
   document.querySelector('.mobile-container').querySelector('br').remove();
-  document.querySelector('.mobile-container').childNodes[1].childNodes[2].style.marginTop='10px';
+ // document.querySelector('.mobile-container').childNodes[1].childNodes[2].style.marginTop='10px';
 }
 function top100Page(){
 document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
