@@ -27,7 +27,7 @@ const Top1: React.FC = () => {
             <div className='tableChild'>
               <h1 className='tableH1' style={{paddingLeft:'10%',color:'white',fontSize:'30pt'}}>TOP100 LIST</h1>
               <h6 className='tableH6Header' style={{color:'white',fontWeight:'lighter'}}>Market cap % </h6>
-              <h6 className='tableH6Header qunat' style={{color:'white',fontWeight:'lighter',textAlign:'center'}}>In GigaPool quantity</h6>
+              <h6 className='tableH6Header qunat' style={{color:'white',fontWeight:'lighter',textAlign:'center'}}>Market Cap</h6>
               </div>
             {dataCoin.map((coin)=>(
               <div className='coinTop100Container' key={coin.id}>
@@ -41,7 +41,7 @@ const Top1: React.FC = () => {
               </span>
               </div>
               <h6 className='info'>{(coin.market_cap/marketcaptotal*100).toFixed(2)} %</h6>
-              <h6 className='infoCenter'>{(coin.circulating_supply / 1000000).toFixed(2)} M</h6>
+              <h6 className='infoCenter'>{Math.floor(coin.market_cap/1000000)} M</h6>
             </div>
             ))} 
           </div>

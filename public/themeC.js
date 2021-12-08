@@ -8,7 +8,7 @@ window.onload = ()=>{
   if(window.location.href.includes('/top100')){
     document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
     document.querySelector('#root').style.backgroundRepeat= 'no-repeat'
-    document.querySelector('#root').style.paddingBottom= '90%'
+    document.querySelector('#root').style.paddingBottom= '40%'
     document.querySelector('.top100page').style.paddingTop='7%'
     document.querySelector('.top100img').style.paddingBottom='1.5%'
   }
@@ -221,7 +221,6 @@ document.querySelector('.Topgrid').style.width='100%';
 document.querySelector('.Topgrid').style.gridTemplateColumns='100%';
 //document.querySelectorAll('img')[4].style.marginBottom='10%'; 
 document.querySelector('.tableH1').style.fontSize='14pt';
-document.querySelector('.qunat').innerText='Quantity';
 //document.querySelector('.tableImg').style.width='100%';
 //document.querySelectorAll('.tableImg')[1].style.width='40px'
 for(let i=0;i < document.querySelectorAll('.coinTop100').length;i++){

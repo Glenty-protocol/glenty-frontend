@@ -525,7 +525,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 }
 .coinTop100Container{
   display:grid;
-  grid-template-columns:45% 30% 25%;
+  grid-template-columns:45% 28% 27%;
   background-color:rgba(49, 39, 131, 0.9);
   border-bottom: 3px solid #768afd !important;
   padding: 15px 0px;
@@ -537,7 +537,6 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 }
 .table{
   display:grid;
-  height:600vh;
   margin-top:30px;
 }
 @media only screen and (max-width:600px){
@@ -555,7 +554,6 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
   }
   .table{
     display:grid;
-    height:1010vh;
     margin-top:30px;
   }
   #price{
@@ -567,9 +565,13 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     border-radius: 50%;
     padding: 5px;
   }
-  .info,.infoCenter,.coinNameTable{
+  .info,.coinNameTable{
     font-size: 12pt !important;
     text-align: center;
+  }
+  .infoCenter{
+    text-align: right !important;
+    font-size: 12pt !important;
   }
   .blockIco{
     margin-top: 5%;
@@ -627,22 +629,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
 }
 
 
-@media only screen and (min-height:919px){
-  @media only screen and (max-height:1250px){
-    .table{height: 850vh;}
-  }
-}
 
-@media only screen and (min-height:700px){
-  @media only screen and (max-height:925px){
-    .table{height: 1200vh;}
-  }
-}
-@media only screen and (min-height:400px){
-  @media only screen and (max-height:699px){
-    .table{height: 1400vh;}
-  }
-}
 button[aria-label='Toggle menu']{
   display: none !important;
 }

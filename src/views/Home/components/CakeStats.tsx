@@ -10,6 +10,7 @@ import CardValue from './CardValue'
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
+  height:100%;
 `
 
 const Row = styled.div`
@@ -17,7 +18,10 @@ const Row = styled.div`
   display: flex;
   font-size: 14px;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 5%;
+`
+const CardImage = styled.img`
+  margin-bottom: 10%;
 `
 
 const CakeStats = () => {
@@ -34,6 +38,7 @@ const CakeStats = () => {
           {t('Glenty Stats')}
           </div>
         </Heading>
+        <CardImage src="/images/cake.svg" alt="cake logo" width={94} height={64} />
         <Row>
           <Text fontSize="14px"><div style={{ color: 'white' }}>{t('Total GLENTY Supply')}</div></Text>
           {cakeSupply &&<CardValue fontSize="14px" value={cakeSupply} />}

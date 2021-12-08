@@ -94,7 +94,7 @@ const Home: React.FC = () => {
         <Cards className='mobile-container'>
           <FarmStakingCard />
           {/* <LotteryCard /> */}
-          <div><CakeStats /><br /><br /><br /><TotalValueLockedCard /></div>
+          <div><CakeStats /></div>
           <Top100 />
           <Glenty />
         </Cards>
