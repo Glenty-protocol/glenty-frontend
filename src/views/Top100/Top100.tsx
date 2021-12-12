@@ -37,11 +37,11 @@ const Top1: React.FC = () => {
               <span className='coinNameTable' style={{marginLeft:'10px',color:'rgb(218, 165, 32)'}}>
                 {coin.symbol.toUpperCase()}
                 <br />
-              <span id='price'>${coin.current_price}</span>
+              <span id='price'>${coin.current_price.toLocaleString().replace(',','’')}</span>
               </span>
               </div>
               <h6 className='info'>{(coin.market_cap/marketcaptotal*100).toFixed(2)} %</h6>
-              <h6 className='infoCenter'>{Math.floor(coin.market_cap/1000000).toLocaleString()} M</h6>
+              <h6 className='infoCenter'>{Math.floor(coin.market_cap/1000000).toLocaleString().replace(',','’')} M</h6>
             </div>
             ))} 
           </div>
