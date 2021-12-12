@@ -727,3 +727,6 @@ color: white;
   .farmsTable tr{
     border-bottom: 2px solid #788cff !important;
   }
+  .farmname{
+    margin-bottom: 10px;
+  }
