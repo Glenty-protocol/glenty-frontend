@@ -148,7 +148,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
           <Button
             width="100%"
             onClick={onPresentDeposit}
-            variant="secondary"
+            style={{backgroundColor: 'rgb(218,165,32)',color:"rgb(3, 14, 51)",borderRadius:"30px"}}
             disabled={['history', 'archived'].some((item) => location.pathname.includes(item))}
           >
             {t('Stake LP')}
@@ -177,7 +177,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
         <Subtle>{t('Enable Farm').toUpperCase()}</Subtle>
       </ActionTitles>
       <ActionContent>
-        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="secondary">
+        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} style={{backgroundColor: 'rgb(218,165,32)',color:"rgb(3, 14, 51)",borderRadius:"30px"}}>
           {t('Enable')}
         </Button>
       </ActionContent>

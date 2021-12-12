@@ -57,7 +57,7 @@ const Glenty = () => {
       <div style={{padding: '24px', justifyContent: "space-around" }}>
         
       <div className='top100moduleHome'>
-        <div className='buytitle' style={{color:'white',textAlign:'left'}}>Buy Price: <br />0.20 USD <br /><br /><span style={{fontSize:'12pt'}}> {(0.2 / bnbpriceg).toFixed(4)} BNB </span></div>
+        <div className='buytitle' style={{color:'white',textAlign:'left'}}>Buy Price: <br />0.20 USD <br /><span style={{fontSize:'12pt',color:'lightgrey'}}> {(0.2 / bnbpriceg).toFixed(4)} BNB </span></div>
         <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/Fichier 1.svg' style={{width:'150px'}} />
         </div>
 
@@ -115,7 +115,7 @@ const Glenty = () => {
               t('Either connect your wallet first or make sure you buy more than 0,0000000001 tokens.'),
             )
           }
-        }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '28px', color: 'white', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '20px'}}>BUY GLENTY</div>
+        }} onKeyDown={() => console.log('amount of tokens:', count)} style={{ backgroundColor: '#FFCC33', borderRadius: '28px', color: 'rgba(49, 39, 131, 0.9)', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '20px'}}>BUY GLENTY</div>
         </div>
       </div>
     </div>

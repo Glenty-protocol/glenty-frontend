@@ -26,19 +26,6 @@ const GlobalStyle = createGlobalStyle`
   input:focus, textarea:focus, select:focus{
     outline: none;
   }
-  #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(1) > div[style="color: white;"] {
-    background: linear-gradient(
-      82deg
-      , rgba(49, 39, 131, 0.95),60%, rgba(49, 39, 131, 0.1));
-  }
-
-  #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(1) > div:nth-child(2) > div {
-    background: rgba(49, 39, 131, 0.9);
-  }
-
-  #root > div > div > div > div > div:nth-child(2)[style="color: white;"] > div:nth-child(2) > div[style="color: white;"] {
-    background: rgba(49, 39, 131, 0.9);
-  }
 
 `
 

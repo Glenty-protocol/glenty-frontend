@@ -11,6 +11,7 @@ const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
   height:100%;
+  background: rgba(49, 39, 131, 0.9);
 `
 
 const Row = styled.div`

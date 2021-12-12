@@ -14,7 +14,7 @@ const StyledFarmStakingCard = styled(Card)`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-
+  background: rgba(49, 39, 131, 0.9);
   ${({ theme }) => theme.mediaQueries.lg} {
     margin: 0;
     max-width: none;

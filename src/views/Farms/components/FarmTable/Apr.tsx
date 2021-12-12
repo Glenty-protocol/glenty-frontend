@@ -29,7 +29,7 @@ const Container = styled.div`
 
     svg {
       path {
-        fill: ${({ theme }) => theme.colors.textSubtle};
+        fill: rgb(218,165,32);
       }
     }
   }

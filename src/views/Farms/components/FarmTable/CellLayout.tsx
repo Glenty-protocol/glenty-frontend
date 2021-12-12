@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Label = styled.div`
-  font-size: 12px;
+  font-size: 10px;
   color: white;
   text-align: left;
+  font-family:kanit !important;
 `
 
 const ContentContainer = styled.div`

@@ -11,6 +11,11 @@ window.onload = ()=>{
     document.querySelector('#root').style.paddingBottom= '40%'
     document.querySelector('.top100page').style.paddingTop='7%'
     document.querySelector('.top100img').style.paddingBottom='1.5%'
+    document.querySelector('.TopPage').parentElement.style.marginLeft='auto'
+    document.querySelector('.TopPage').parentElement.style.maxWidth='100%'
+  }
+  if(window.location.href.includes('/farms')){
+    document.querySelector('#root').style.paddingBottom= '10%'
   }
   function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -165,8 +170,6 @@ function mobileC(){
 function farmPage(){
 document.querySelector('h1').style.textAlign='center';
 document.querySelector('h2').style.textAlign='center';
-document.querySelector('table').style.borderSpacing='0px 15px';
-document.querySelector('table').style.borderCollapse='separate';
 document.querySelector('#root').style.backgroundPositionY='bottom';
 document.querySelector('table').offsetParent.parentElement.style.background='transparent'
 document.querySelectorAll('button')[2].remove()

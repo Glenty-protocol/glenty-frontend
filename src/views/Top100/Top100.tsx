@@ -41,7 +41,7 @@ const Top1: React.FC = () => {
               </span>
               </div>
               <h6 className='info'>{(coin.market_cap/marketcaptotal*100).toFixed(2)} %</h6>
-              <h6 className='infoCenter'>{Math.floor(coin.market_cap/1000000)} M</h6>
+              <h6 className='infoCenter'>{Math.floor(coin.market_cap/1000000).toLocaleString()} M</h6>
             </div>
             ))} 
           </div>

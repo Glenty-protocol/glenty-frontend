@@ -42,7 +42,7 @@ const Top100 = () => {
       </Heading>
       <div style={{padding: '24px', justifyContent: "space-around"}}>
         <div className='top100moduleHome'>
-        <div className='buytitle' style={{color:'white',textAlign:'left'}}>Buy Price: <br />{Math.round(top100api/10000000)} USD <br /><br /><span style={{fontSize:'12pt'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white',textAlign:'left'}}>Buy Price: <br />{Math.round(top100api/10000000).toLocaleString()} USD<br /><span style={{fontSize:'12pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'150px'}} />
         </div>
         <div className='top100page'>
@@ -100,7 +100,7 @@ const Top100 = () => {
               t('Either connect your wallet first or make sure you buy more than 0,0000000001 tokens.'),
             )
           }
-        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '28px', color: 'white', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '30px 2px 20px auto', padding: '20px'}}>BUY TOP100</div>
+        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '28px', color: 'rgba(49, 39, 131, 0.9)', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '30px 2px 20px auto', padding: '20px'}}>BUY TOP100</div>
         </div>
       </div>
     </div>

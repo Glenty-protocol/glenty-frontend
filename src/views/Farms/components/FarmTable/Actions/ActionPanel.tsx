@@ -63,7 +63,9 @@ const Container = styled.div<{ expanded }>`
 `
 
 const StyledLinkExternal = styled(LinkExternal)`
-  font-weight: 400;
+  font-weight: 100;
+  color:rgb(218, 165, 32);
+  font-family:kanit !important;
 `
 
 const StakeContainer = styled.div`
@@ -163,22 +165,22 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
         )}
         <StyledLinkExternal href={bsc}>{t('View Contract')}</StyledLinkExternal>
         <StyledLinkExternal href={info}>{t('See Pair Info')}</StyledLinkExternal>
-        <TagsContainer>
+        {/* <TagsContainer>
           {farm.isCommunity ? <CommunityTag /> : <CoreTag />}
           {dual ? <DualTag /> : null}
-        </TagsContainer>
+        </TagsContainer> */}
       </InfoContainer>
       <ValueContainer>
         <ValueWrapper>
-          <Text>{t('APR')}</Text>
+          <Text color='white'>{t('APR')}</Text>
           <Apr {...apr} />
         </ValueWrapper>
         <ValueWrapper>
-          <Text>{t('Multiplier')}</Text>
+          <Text color='white'>{t('Multiplier')}</Text>
           <Multiplier {...multiplier} />
         </ValueWrapper>
         <ValueWrapper>
-          <Text>{t('Liquidity')}</Text>
+          <Text color='white'>{t('Liquidity')}</Text>
           <Liquidity {...liquidity} />
         </ValueWrapper>
       </ValueContainer>

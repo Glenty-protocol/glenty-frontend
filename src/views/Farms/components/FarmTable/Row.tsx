@@ -103,7 +103,7 @@ const Row: React.FunctionComponent<RowPropsWithLoading> = (props) => {
             switch (key) {
               case 'details':
                 return (
-                  <td key={key}>
+                  <td key={key} className='detailsFarm'>
                     <CellInner>
                       <CellLayout>
                         <Details actionPanelToggled={actionPanelExpanded} />
@@ -113,7 +113,7 @@ const Row: React.FunctionComponent<RowPropsWithLoading> = (props) => {
                 )
               case 'apr':
                 return (
-                  <td key={key}>
+                  <td key={key} className='aprFarm'>
                     <CellInner>
                       <CellLayout label={t('APR')}>
                         <Apr {...props.apr} hideButton={isMobile} />
@@ -123,7 +123,7 @@ const Row: React.FunctionComponent<RowPropsWithLoading> = (props) => {
                 )
               default:
                 return (
-                  <td key={key}>
+                  <td key={key} className='earnedFarm'>
                     <CellInner>
                       <CellLayout label={t(tableSchema[columnIndex].label)}>
                         {React.createElement(cells[key], { ...props[key], userDataReady })}
@@ -175,7 +175,7 @@ const Row: React.FunctionComponent<RowPropsWithLoading> = (props) => {
     <>
       {handleRenderRow()}
       {shouldRenderChild && (
-        <tr>
+        <tr className='detailsFarms'>
           <td colSpan={6}>
             <ActionPanel {...props} expanded={actionPanelExpanded} />
           </td>

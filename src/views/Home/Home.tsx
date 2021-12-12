@@ -84,12 +84,6 @@ const Home: React.FC = () => {
 
   return (
     <Page className='homeCont'>
-      <Hero>
-        <Heading as="h1" scale="xl" mb="24px" color="secondary">
-        <div className='homeh1' style={{ fontSize : '38pt', color:'#DAA520' }}> {t('Glenty')}</div>
-        </Heading>
-        <Text><div id='secondText' style={{ color: '#DAA520', fontSize: '26px' }}>{t('The #1 index fund DEX and yield farm on Binance Smart Chain.')}</div></Text>
-      </Hero>
       <div style={{ color: 'white' }}>
         <Cards className='mobile-container'>
           <FarmStakingCard />
