@@ -42,7 +42,7 @@ const Top100 = () => {
       </Heading>
       <div style={{padding: '24px', justifyContent: "space-around"}}>
         <div className='top100moduleHome'>
-        <div className='buytitle' style={{color:'white',textAlign:'left'}}>Buy Price: <br />{Math.round(top100api/10000000).toLocaleString()} USD<br /><span style={{fontSize:'12pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white',textAlign:'left'}}>Buy Price: <br />{Math.round(top100api/10000000).toLocaleString().replace(',','’')} USD<br /><span style={{fontSize:'12pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'150px'}} />
         </div>
         <div className='top100page'>

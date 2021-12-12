@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Button, useModal, IconButton, AddIcon, MinusIcon, Skeleton } from '@pancakeswap/uikit'
+import { Button, useModal, IconButton, AddIcon, MinusIcon, Skeleton,Flex,Text } from '@pancakeswap/uikit'
 import { useLocation } from 'react-router-dom'
 import UnlockButton from 'components/UnlockButton'
 import { useWeb3React } from '@web3-react/core'
@@ -103,7 +103,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
           <Subtle>{t('Start Farming').toUpperCase()}</Subtle>
         </ActionTitles>
         <ActionContent>
-          <UnlockButton width="100%" />
+          <Flex justifyContent="space-between" width='100%'><Text color='white' marginTop="8px" fontSize='20px'>0</Text> <UnlockButton width="50%" /></Flex>
         </ActionContent>
       </ActionContainer>
     )
@@ -145,14 +145,16 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
           <Title>{lpSymbol}</Title>
         </ActionTitles>
         <ActionContent>
+        <Flex justifyContent="space-between" width='100%'><Text color='white' marginTop="8px" fontSize='20px'>0</Text> 
           <Button
-            width="100%"
+            width="50%"
             onClick={onPresentDeposit}
             style={{backgroundColor: 'rgb(218,165,32)',color:"rgb(3, 14, 51)",borderRadius:"30px"}}
             disabled={['history', 'archived'].some((item) => location.pathname.includes(item))}
           >
             {t('Stake LP')}
           </Button>
+          </Flex>
         </ActionContent>
       </ActionContainer>
     )
@@ -177,9 +179,11 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
         <Subtle>{t('Enable Farm').toUpperCase()}</Subtle>
       </ActionTitles>
       <ActionContent>
-        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} style={{backgroundColor: 'rgb(218,165,32)',color:"rgb(3, 14, 51)",borderRadius:"30px"}}>
+      <Flex justifyContent="space-between" width='100%'><Text color='white' marginTop="8px" fontSize='20px'>0</Text> 
+        <Button width="50%" disabled={requestedApproval} onClick={handleApprove} style={{backgroundColor: 'rgb(218,165,32)',color:"rgb(3, 14, 51)",borderRadius:"30px"}}>
           {t('Enable')}
         </Button>
+        </Flex>
       </ActionContent>
     </ActionContainer>
   )

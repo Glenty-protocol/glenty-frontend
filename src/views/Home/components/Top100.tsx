@@ -42,7 +42,7 @@ const Top100 = () => {
       </Heading>
       <div style={{padding: '24px', justifyContent: "space-around"}}>
         <div className='top100module'>
-        <div className='buytitle' style={{color:'white'}}>Buy Price: <br />{Math.round(top100api/10000000).toLocaleString()} USD <br /><span style={{fontSize:'10pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white'}}>Buy Price: <br />{Math.round(top100api/10000000).toLocaleString().replace(',','’')} USD <br /><span style={{fontSize:'10pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'150px'}} />
         </div>
         <div className='top100page'>
@@ -111,7 +111,7 @@ const Top100 = () => {
       <div style={{padding: '10px 24px', justifyContent: "space-around"}}>
         <div className='top100module'>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'200px'}} />
-        <div className='buytitle' style={{color:'white'}}><span id='buypricelite'>Buy Price:</span> <br />{Math.round(top100api/10000000).toLocaleString()} USD <br /> <span style={{fontSize:'14pt'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white'}}><span id='buypricelite'>Buy Price:</span> <br />{Math.round(top100api/10000000).toLocaleString().replace(',','’')} USD <br /> <span style={{fontSize:'14pt'}}> {bnbprice} BNB </span></div>
         <div onClick={() => {
           if (account && count > 0) {
             console.log("conf", Abi as AbiItem[], config.buyContractAddressTop100);
@@ -138,7 +138,7 @@ const Top100 = () => {
               t('Either connect your wallet first or make sure you buy more than 0,0000000001 tokens.'),
             )
           }
-        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'rgba(49, 39, 131, 0.9)', cursor: 'pointer', fontSize: '16px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '24px',height:'35%',width:'120%'}}>BUY TOP100</div>
+        }} onKeyDown={() => console.log('amount of tokens:', count)} className='homeSmallBig' style={{ backgroundColor: '#FFCC33', borderRadius: '24px', color: 'rgba(49, 39, 131, 0.9)', cursor: 'pointer', fontSize: '20px', textAlign: 'center', margin: '20px 2px 20px auto', padding: '19px',height:'35%',width:'120%'}}>BUY TOP100</div>
         </div>
         <div style={{display:'grid',gridTemplateColumns:'45% 45%', gridGap:'10%',width:'100%'}}>
         <div className='top100page'>

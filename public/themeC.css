@@ -249,9 +249,6 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     .mobileTop100{
       display: none;
     }
-    .TopPage{
-      padding-top: 25% !important;
-    }
     .top100module{
     display: grid;
     grid-template-columns: 20% 40% 30% !important;
@@ -259,7 +256,9 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     grid-gap: 10% !important;
     margin: 2% auto !important;
     }
-    
+    .TopPage{
+      padding-top: 25% !important;
+    }
     @media only screen and (max-width:1450px){
       .nav-links{
         font-size: 16pt;
@@ -272,6 +271,11 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
       }
       #farmsCont{
         margin-left: 5% !important;
+      }
+      @media only screen and (min-width:900px){
+        .TopPage{
+          padding-top: 15% !important;
+        }
       }
     }
     @media only screen and (max-width:1450px){
@@ -300,7 +304,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
               margin: 12% 1% !important;
             }}
   }
-
+ 
   /*mobile*/
   
   .fixedFooter{
@@ -445,9 +449,6 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
    }
    .mobile-container{
      grid-template-columns: 0% !important;
-   }
-   .mobile-container:first-child{
-    margin-top: -50% !important;
    }
    .Topgrid{
      margin-top: 5% !important;

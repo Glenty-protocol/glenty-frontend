@@ -66,6 +66,7 @@ const StyledLinkExternal = styled(LinkExternal)`
   font-weight: 100;
   color:rgb(218, 165, 32);
   font-family:kanit !important;
+  font-size: 20px;
 `
 
 const StakeContainer = styled.div`
