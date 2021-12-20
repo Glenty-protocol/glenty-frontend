@@ -15,7 +15,7 @@ window.onload = ()=>{
     document.querySelector('.TopPage').parentElement.style.maxWidth='100%'
   }
   if(window.location.href.includes('/farms')){
-    document.querySelector('#root').style.paddingBottom= '10%'
+    document.querySelector('#root').style.paddingBottom= '25%'
   }
   function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -103,7 +103,7 @@ window.onload = ()=>{
   lang.querySelector('button').querySelector('svg').style.fill = 'white';
   lang.querySelector('button').querySelector('div').style.color = 'white';
   document.querySelector('nav').lastElementChild.lastElementChild.lastElementChild.style.backgroundColor='rgb(255, 204, 51)'
-  window.location.href.includes('farms')?document.querySelector('h1').parentElement.offsetParent.setAttribute('id',"farmsCont"):false
+ window.location.href.includes('farms')?document.querySelector('.farmsPage').parentElement.setAttribute('id',"farmsCont"):false
 
   window.setInterval(function(){
     if(document.querySelector('.price')){
@@ -168,8 +168,6 @@ function mobileC(){
 }
 
 function farmPage(){
-document.querySelector('h1').style.textAlign='center';
-document.querySelector('h2').style.textAlign='center';
 document.querySelector('#root').style.backgroundPositionY='bottom';
 document.querySelector('table').offsetParent.parentElement.style.background='transparent'
 document.querySelectorAll('button')[2].remove()
@@ -215,17 +213,13 @@ function homeMc(){
   document.querySelector('.cont2').childNodes[1].style.marginBottom = '150px';
   document.querySelector('.mobile-container').querySelector('br').remove();
   document.querySelector('.mobile-container').querySelector('br').remove();
- // document.querySelector('.mobile-container').childNodes[1].childNodes[2].style.marginTop='10px';
 }
 function top100Page(){
 document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
 document.querySelector('.TopPage').style.margin='0px';
 document.querySelector('.Topgrid').style.width='100%';
 document.querySelector('.Topgrid').style.gridTemplateColumns='100%';
-//document.querySelectorAll('img')[4].style.marginBottom='10%'; 
 document.querySelector('.tableH1').style.fontSize='14pt';
-//document.querySelector('.tableImg').style.width='100%';
-//document.querySelectorAll('.tableImg')[1].style.width='40px'
 for(let i=0;i < document.querySelectorAll('.coinTop100').length;i++){
   document.querySelectorAll('.coinTop100')[i].style.gridTemplateColumns='15% 10% 10% 20%';
   document.querySelectorAll('.coinTop100 img')[i].style.margin='15% 10% 10% 20%-30% 1px';

@@ -26,6 +26,7 @@ const Container = styled.div`
   button {
     width: 20px;
     height: 20px;
+    display:none;
 
     svg {
       path {

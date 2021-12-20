@@ -340,15 +340,15 @@ const Farms: React.FC = () => {
 
   return (
     <>
-      <PageHeader>
+      { /* <PageHeader>
         <Heading as="h1" scale="xxl" color="white" mb="24px" style={{marginTop:'12%'}} textAlign="center">
           {t('Farms')}
         </Heading>
         <Heading scale="lg" className='farmsSecond'color="rgb(218, 165, 32)" textAlign="center">
           {t('Stake Liquidity Pool (LP) tokens to earn.')}
         </Heading>
-      </PageHeader>
-      <Page>
+      </PageHeader> */}
+      <Page className='farmsPage'>
         <ControlContainer>
           <ViewControls>
            {/* <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} /> */}
