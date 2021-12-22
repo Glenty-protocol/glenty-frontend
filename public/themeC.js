@@ -239,7 +239,7 @@ function createFooter(){
   MoreM.classList.add('footerLinks');
   MoreM.classList.add('footermore');
   gigapoolM.classList.add('footerLinks');
-
+  window.location.href.includes("top100")?Top100M.classList.add('activeFooter'):false
 
   TradeM.setAttribute('href','https://exchange.glenty.com/#/swap');
   Top100M.setAttribute('href','https://glenty.com/top100');
@@ -317,6 +317,7 @@ function createMenuFooter(){
   githubM.setAttribute('href','https://github.com/glenty-protocol');
   docsM.setAttribute('href','https://glenty.gitbook.io/glenty/');
   FarmsM.setAttribute('href','https://glenty.com/farms');
+  window.location.href.includes("farms")?FarmsM.classList.add('activeFooter'):false
 
 
   const githubImg = document.createElement('img');
