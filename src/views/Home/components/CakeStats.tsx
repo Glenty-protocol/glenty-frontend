@@ -20,6 +20,7 @@ const Row = styled.div`
   font-size: 14px;
   justify-content: space-between;
   margin-bottom: 5%;
+  border-bottom: 1px solid #636edb !important;
 `
 const CardImage = styled.img`
   margin-bottom: 10%;
@@ -41,16 +42,16 @@ const CakeStats = () => {
         </Heading>
         <CardImage src="/images/cake.svg" alt="cake logo" width={94} height={64} />
         <Row>
-          <Text fontSize="14px"><div style={{ color: 'white' }}>{t('Total GLENTY Supply')}</div></Text>
-          {cakeSupply &&<CardValue fontSize="14px" value={cakeSupply} />}
+          <Text fontSize="14px"><div className='textBoxHome' style={{ color: 'white',fontWeight:200 }}>{t('Total GLENTY Supply')}</div></Text>
+          {cakeSupply &&<CardValue color="#778cff" value={cakeSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px"><div style={{ color: 'white' }}>{t('Total GLENTY Burned')}</div></Text>
-          <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
+          <Text fontSize="14px"><div className='textBoxHome' style={{ color: 'white',fontWeight:200 }}>{t('Total GLENTY Burned')}</div></Text>
+          <CardValue color="#778cff" decimals={0} value={burnedBalance} />
         </Row>
         <Row>
-          <Text fontSize="14px"><div style={{ color: 'white' }}>{t('New GLENTY/block')}</div></Text>
-          <CardValue fontSize="14px" decimals={0} value={20} />
+          <Text fontSize="14px"><div className='textBoxHome' style={{ color: 'white',fontWeight:200 }}>{t('New GLENTY/block')}</div></Text>
+          <CardValue color="#778cff" decimals={0} value={20} />
         </Row>
       </CardBody>
     </StyledCakeStats>

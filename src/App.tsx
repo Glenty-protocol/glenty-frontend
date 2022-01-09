@@ -4,6 +4,7 @@ import { ResetCSS } from '@pancakeswap/uikit'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
 import { usePollCoreFarmData, useFetchProfile, usePollBlockNumber } from 'state/hooks'
+import Slide from 'views/Home/components/Slider'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import SuspenseWithChunkError from './components/SuspenseWithChunkError'
@@ -52,6 +53,7 @@ const App: React.FC = () => {
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>
+              <Slide />
               <Home />
             </Route>
             <Route path="/farms">

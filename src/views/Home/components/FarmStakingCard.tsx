@@ -24,8 +24,10 @@ const CardImage = styled.img`
 `
 
 const Label = styled.div`
-  color: ${({ theme }) => theme.colors.textSubtle};
-  font-size: 14px;
+  color: white;
+  font-size: 14pt;
+  font-family: kanit !important;
+  font-weight:200;
 `
 
 const Actions = styled.div`
@@ -66,13 +68,13 @@ const FarmedStakingCard = () => {
         <CardImage src="/images/cake.svg" alt="cake logo" width={94} height={64} />
         <Block>
           <div style={{ color: 'white' }}>
-            <Label><div style={{ color: 'white' }}>{t('GLENTY to Harvest')}:</div></Label>
+            <Label>{t('GLENTY to Harvest')}:</Label>
             <CakeHarvestBalance />
           </div>
         </Block>
         <Block>
-          <div style={{ color: 'white' }}>
-            <Label><div style={{ color: 'white' }}>{t('GLENTY in Wallet')}:</div></Label>
+          <div style={{ color: 'white' }} className='secondBlock'>
+            <Label>{t('GLENTY in Wallet')}:</Label>
             <CakeWalletBalance />
           </div>
         </Block>

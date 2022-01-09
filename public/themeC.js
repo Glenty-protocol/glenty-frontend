@@ -4,9 +4,8 @@ window.onload = ()=>{
   document.querySelector('a').addEventListener('click',function(){
     window.location.replace('https://glenty.com')
   })
-  
+ 
   if(window.location.href.includes('/top100')){
-    document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
     document.querySelector('#root').style.backgroundRepeat= 'no-repeat'
     document.querySelector('#root').style.paddingBottom= '40%'
     document.querySelector('.top100page').style.paddingTop='7%'
@@ -20,6 +19,8 @@ window.onload = ()=>{
   function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       document.querySelector('nav').style.background = "url('./images/Fichier 8.svg')";
+      document.querySelector('nav').style.paddingBottom = "75px";
+      document.querySelector('nav').style.paddingTop = "50px";
 
     } else {
       document.querySelector('nav').style.background = "none";
@@ -149,7 +150,6 @@ function mobileC(){
   },3000)
   
 
-  window.location.pathname === '/'? homeMc():false
   window.location.href.includes('top100')?top100Page():false
   window.location.href.includes('farms')?farmPage():false
 
@@ -209,13 +209,8 @@ document.querySelector('.icons').style.float='';
 }
 
 
-function homeMc(){
-  document.querySelector('.cont2').childNodes[1].style.marginBottom = '150px';
-  document.querySelector('.mobile-container').querySelector('br').remove();
-  document.querySelector('.mobile-container').querySelector('br').remove();
-}
+
 function top100Page(){
-document.querySelector('#root').style.background= 'url("./images/TP100_mobile_background.svg")'
 document.querySelector('.TopPage').style.margin='0px';
 document.querySelector('.Topgrid').style.width='100%';
 document.querySelector('.Topgrid').style.gridTemplateColumns='100%';
