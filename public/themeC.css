@@ -17,6 +17,7 @@
 nav{
   transition: 0.4s !important;
   background: transparent;
+  position: absolute;
 }
 .nav-links{
     color: whitesmoke;
@@ -25,7 +26,7 @@ nav{
   .header-grid{
 width: 50%;
 display: grid;
-text-align: center;
+text-align: left;
 align-items: center;
 grid-template-columns: 16% 16% 16% 16% 16% 16%;
   }
@@ -108,7 +109,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     }
     @media only screen and (max-width:1450px){
       .nav-links{
-        font-size: 18pt;
+        font-size: 17pt;
       }
     }
     @media only screen and (max-width:1500px){
@@ -279,6 +280,9 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
   @media only screen and (max-width:900px) {
     .tableChild{
   padding-top: 10% !important;
+}
+nav{
+  position: absolute !important;
 }
 .slick-arrow{
   display: none !important;

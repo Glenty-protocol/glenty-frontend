@@ -4,6 +4,11 @@ window.onload = ()=>{
   document.querySelector('a').addEventListener('click',function(){
     window.location.replace('https://glenty.com')
   })
+  if(document.location.pathname === "/"){
+  const autoClick = document.querySelector('.slick-next');
+  setInterval(() => {
+    autoClick.click();
+  }, 3000);}
  
   if(window.location.href.includes('/top100')){
     document.querySelector('#root').style.backgroundRepeat= 'no-repeat'
@@ -49,7 +54,7 @@ window.onload = ()=>{
    farmsl.innerHTML= 'Farms'
    gigapooll.innerHTML= 'GigaPool'
    githubl.innerHTML= 'Github'
-   docsl.innerHTML= 'Docs'
+   docsl.innerHTML= 'White Paper'
 
 
    homel.setAttribute("href", "/top100")
@@ -57,7 +62,7 @@ window.onload = ()=>{
    farmsl.setAttribute("href", "https://glenty.com/farms")
    gigapooll.setAttribute("href", "https://giga.glenty.com")
    githubl.setAttribute("href", "https://github.com/glenty-protocol")
-   docsl.setAttribute("href", "https://glenty.gitbook.io/glenty/")
+   docsl.setAttribute("href", "./Glenty Index Token.pdf")
 
    homel.setAttribute("class", "nav-links")
    tradel.setAttribute("class", "nav-links")
@@ -310,7 +315,7 @@ function createMenuFooter(){
 
 
   githubM.setAttribute('href','https://github.com/glenty-protocol');
-  docsM.setAttribute('href','https://glenty.gitbook.io/glenty/');
+  docsM.setAttribute('href','./Glenty Index Token.pdf');
   FarmsM.setAttribute('href','https://glenty.com/farms');
   window.location.href.includes("farms")?FarmsM.classList.add('activeFooter'):false
 
@@ -366,5 +371,10 @@ function createMenuFooter(){
   function getSocial(){
     const social = document.querySelector('.socialL');
     document.querySelector('#root').appendChild(social.parentElement);
+    /*const FB = document.createElement("a");
+    const FBIcon = document.createElement("img");
+    FBIcon.setAttribute("src","./images/social/facebook.svg");
+    FB.append(FBIcon);
+    document.querySelector('.socialL').append(FB);*/
   }
   
