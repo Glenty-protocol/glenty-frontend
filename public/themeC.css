@@ -28,7 +28,6 @@ display: grid;
 text-align: center;
 align-items: center;
 grid-template-columns: 16% 16% 16% 16% 16% 16%;
-margin-left: -8%;
   }
   .farmsSecond{
     font-family:kanit !important;
@@ -51,8 +50,6 @@ margin-left: -8%;
   .price div{
     color: white;
     font-size: 20pt;
-    font-weight: 200;
-    font-family: "kanit" !important;
   }
   .socialL{
     bottom: 30px;
@@ -107,14 +104,17 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
     margin: 2% auto !important;
     }
     .TopPage{
-      padding-top: 25% !important;
+      padding-top: 20% !important;
     }
     @media only screen and (max-width:1450px){
       .nav-links{
         font-size: 18pt;
       }
     }
-   
+    @media only screen and (max-width:1500px){
+      .homeCont{
+        margin: 0% 12% !important;
+      }}
     @media only screen and (max-width:1400px){
       .homeCont{
         margin: 10% !important;
@@ -153,7 +153,12 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
             .homeCont{
               margin: 0% 1% !important;
             }}
+           
   }
+  @media only screen and (max-width:865px){
+    .homeCont{
+      margin: 5% 15% !important;
+    }}
  
   /*mobile*/
   
@@ -308,7 +313,7 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
    .table{
      margin-bottom: 150px;
    }
-   .price,.socialL,.header-grid,.homeh1,#secondText{
+   .price,.socialL,.header-grid,.homeh1,#secondText,.removeonphone{
      display: none !important;
    }
    #root{
@@ -586,7 +591,7 @@ color: white;
   }
   @media only screen and (min-width:1900px){
     .homeCont{
-      margin: auto 25% !important;
+      margin: auto 22% !important;
     }
   }
   .farmsTable tr td div a svg{

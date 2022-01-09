@@ -77,7 +77,7 @@ function Slide() {
         <div
           style={{
             borderRadius: "10px",
-            marginBottom: "-50px"
+            marginBottom: `${window.innerWidth>865?"-50px":"0px"}`
           }}
         >
           <ul style={{ margin: "10px 0px" }} className="dotsList"> {dots} </ul>

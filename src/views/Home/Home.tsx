@@ -123,7 +123,7 @@ const Home: React.FC = () => {
     <Page className='homeCont' >
       <div style={{ color: 'white'}}>
         <div style={{width:window.innerWidth>865?"300%":"100%",background:window.innerWidth>865?`url(${statsImg}) right center / cover no-repeat`: "transparent",marginLeft:window.innerWidth>865?"-80%":"0"}}>
-        <Cards className='mobile-container' style={{marginLeft:`${window.innerWidth>865?"23.5%":"false"}`,width:`${window.innerWidth>865?"40%":"auto"}`}}>
+        <Cards className='mobile-container' style={{marginLeft:`${window.innerWidth>865?"23%":"false"}`,width:`${window.innerWidth>865?"40%":"auto"}`,padding:`${window.innerWidth>865?"180px 110px":"0"}`}}>
           <FarmStakingCard />
           <div><CakeStats /></div> 
         </Cards>
@@ -196,9 +196,9 @@ iusto odio dignis</h1>
         <h1 className="homeTitle" style={{textAlign:"center"}}>OUR AUDITS</h1>
         <br /><br />
         <Row>
-        <div style={{textAlign:"center"}}><CardImage src={imunefi} alt="imunefi" width={window.innerWidth>865?200:80} height={window.innerWidth>865?200:80} /> <br /><br /><br /><h1 style={{fontSize:"34pt", color:'#788cff'}}>IMUNEFI</h1><br /><br /><h1 style={{fontSize:"24pt", color:'rgb(208 210 217 / 50%)'}}>(Pending)</h1></div>
-        <div style={{textAlign:"center"}}><CardImage src={solidity} alt="solidity" width={window.innerWidth>865?200:80} height={window.innerWidth>865?200:80} /><br /><br /><br /><h1 style={{fontSize:"34pt", color:'#788cff'}}>SOLIDITY</h1><br /><br /><h1 style={{fontSize:"24pt", color:'rgb(208 210 217 / 50%)'}}>(Approved)</h1></div>
-        <div style={{textAlign:"center"}}><CardImage src={certik} alt="certik" width={window.innerWidth>865?200:80} height={window.innerWidth>865?200:80} /><br /><br /><br /><h1 style={{fontSize:"34pt", color:'#788cff'}}>CERTIK</h1><br /><br /><h1 style={{fontSize:"24pt", color:'rgb(208 210 217 / 50%)'}}>(Pending)</h1></div>
+        <div style={{textAlign:"center"}}><CardImage src={imunefi} alt="imunefi" width={window.innerWidth>865?200:80} height={window.innerWidth>865?200:80} /> <br className='removeonphone'  /><br className='removeonphone'  /><br className='removeonphone'  /><h1 style={{fontSize:`${window.innerWidth>865?"34pt":"18pt"}`, color:'#788cff'}}>IMUNEFI</h1><br className='removeonphone'/><br/><h1 style={{fontSize:`${window.innerWidth>865?"24pt":"12pt"}`, color:'rgb(208 210 217 / 50%)'}}>(Pending)</h1></div>
+        <div style={{textAlign:"center"}}><CardImage src={solidity} alt="solidity" width={window.innerWidth>865?200:80} height={window.innerWidth>865?200:80} /><br className='removeonphone'  /><br className='removeonphone'  /><br className='removeonphone'  /><h1 style={{fontSize:`${window.innerWidth>865?"34pt":"18pt"}`, color:'#788cff'}}>SOLIDITY</h1><br className='removeonphone' /><br/><h1 style={{fontSize:`${window.innerWidth>865?"24pt":"12pt"}`, color:'rgb(208 210 217 / 50%)'}}>(Approved)</h1></div>
+        <div style={{textAlign:"center"}}><CardImage src={certik} alt="certik" width={window.innerWidth>865?200:80} height={window.innerWidth>865?200:80} /><br className='removeonphone'  /><br className='removeonphone'  /><br className='removeonphone'  /><h1 style={{fontSize:`${window.innerWidth>865?"34pt":"18pt"}`, color:'#788cff'}}>CERTIK</h1><br className='removeonphone' /><br/><h1 style={{fontSize:`${window.innerWidth>865?"24pt":"12pt"}`, color:'rgb(208 210 217 / 50%)'}}>(Pending)</h1></div>
         </Row>
         </div>
         </div>
