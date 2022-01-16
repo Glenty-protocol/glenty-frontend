@@ -63,6 +63,8 @@ window.onload = ()=>{
    gigapooll.setAttribute("href", "https://giga.glenty.com")
    githubl.setAttribute("href", "https://github.com/glenty-protocol")
    docsl.setAttribute("href", "./Glenty Index Token.pdf")
+   docsl.setAttribute("target", "_blank")
+
 
    homel.setAttribute("class", "nav-links")
    tradel.setAttribute("class", "nav-links")
