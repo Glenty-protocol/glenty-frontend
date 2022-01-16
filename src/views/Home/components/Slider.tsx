@@ -96,9 +96,9 @@ function Slide() {
           <div>
           <img src={slide2} alt='test'/>
           </div>
-          <div>
+          {/* <div>
           <img src={slide3} alt='test'/>
-          </div>
+          </div> */}
           <div>
           <img src={slide4} alt='test'/>
           </div>

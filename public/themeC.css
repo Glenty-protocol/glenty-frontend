@@ -133,6 +133,9 @@ tr td:last-child div,tr td:last-child { border-bottom-right-radius: 20px; }
       .Topgrid{
         margin-top: 0 !important;
       }
+      .TopPage{
+        padding-top: 10% !important;
+      }
     }
     @media only screen and (max-width:1300px){
       .homeCont{

@@ -133,18 +133,10 @@ const Home: React.FC = () => {
         <Cards className='mobile-container' style={{marginLeft:`${window.innerWidth>865?"21.5%":"false"}`,width:`${window.innerWidth>865?"50%":"auto"}`}}>
           <div>
             <h1 className="homeTitle">GIGAPOOL</h1>
-            <h1 className='sectionText'>Lorem ipsum dolor sit amet, consectetuer 
-adipiscing elit, sed diam nonummy nibh 
-euismod tincidunt ut laoreet dolore <br />
-magna aliquam erat volutpat. Ut wisi 
-enim ad minim veniam, quis nostrud <br />
-exerci tation ullamcorper suscipit lobortis 
-nisl ut aliquip ex ea commodo consequat. <br />
-Duis autem vel eum iriure dolor in 
-hendrerit in vulputate velit esse molestie <br />
-consequat, vel illum dolore eu feugiat 
-nulla facilisis at vero eros et accumsan et 
-iusto odio dignis</h1>
+            <h1 className='sectionText'>The Gigapool is an elegant solution to revolutionize the way cryptos are traded.
+At the start, Cryptos were traded via centralized exchanges such as (Binance,Coinbase). The only problem is that you never really own your cryptos when you use them. These kinds of exchanges will keep your private key.
+With the emerge of decentralized exchanges (Uniswap, Pancakeswap), cryptos were traded via liquidity pool. You are always the owner of your private key to access your cryptos. The downside is that the liquidity pools only allow pairs of 2 cryptos. Therefore, it forces you to make multiple transactions to obtain the token you want.
+With Glenty, not only is the exchange completely decentralized, but the Gigapool is composed of the 100 biggest cryptos. This allows you to convert any token to another in only 1 transaction.</h1>
           </div>
           <div><img src={gigaImg} style={{width:`${window.innerWidth>865?"70%":"100%"}`}} alt='gigapool' /></div> 
         </Cards>
@@ -155,18 +147,14 @@ iusto odio dignis</h1>
         <div className='top100Reorder'><img src={top100Img} style={{width:`${window.innerWidth>865?"70%":"100%"}`}} alt='top100' /></div> 
           <div style={{marginLeft:`${window.innerWidth>865?"-30%":"false"}`}}>
             <h1 className="homeTitle" style={{textAlign:"right"}}>Top100</h1>
-            <h1 className='sectionText' style={{textAlign:"right"}}>Lorem ipsum dolor sit amet, consectetuer 
-adipiscing elit, sed diam nonummy nibh 
-euismod tincidunt ut laoreet dolore <br />
-magna aliquam erat volutpat. Ut wisi 
-enim ad minim veniam, quis nostrud <br />
-exerci tation ullamcorper suscipit lobortis 
-nisl ut aliquip ex ea commodo consequat. <br />
-Duis autem vel eum iriure dolor in 
-hendrerit in vulputate velit esse molestie <br />
-consequat, vel illum dolore eu feugiat 
-nulla facilisis at vero eros et accumsan et 
-iusto odio dignis</h1>
+            <h1 className='sectionText' style={{textAlign:"right"}}>The TOP100 Token is pegged in real time to the Market Cap of the 100 biggest cryptos.
+By purchasing, you will invest in the whole market.
+Your contribution will automatically be distributed proportionally into each cryptos in the Gigapool.
+This provides liquidity to the exchange and allow transactions for users.
+You can then stack the TOP100 token to earn passive income coming from the transaction’s fees.
+If a new crypto emerges, it will instantly be added and replace the smallest one.
+Never miss a new coin and buy it at its best price.
+Investing in TOP100 is believing that cryptos will keep growing with the possibility of new tokens taking over.</h1>
           </div>
         </Cards>
         </div>
@@ -174,18 +162,11 @@ iusto odio dignis</h1>
         <Cards className='mobile-container' style={{marginLeft:`${window.innerWidth>865?"21.5%":"false"}`,width:`${window.innerWidth>865?"50%":"auto"}`}}>
           <div>
             <h1 className="homeTitle">GLENTY</h1>
-            <h1 className='sectionText'>Lorem ipsum dolor sit amet, consectetuer 
-adipiscing elit, sed diam nonummy nibh 
-euismod tincidunt ut laoreet dolore <br />
-magna aliquam erat volutpat. Ut wisi 
-enim ad minim veniam, quis nostrud <br />
-exerci tation ullamcorper suscipit lobortis 
-nisl ut aliquip ex ea commodo consequat. <br />
-Duis autem vel eum iriure dolor in 
-hendrerit in vulputate velit esse molestie <br />
-consequat, vel illum dolore eu feugiat 
-nulla facilisis at vero eros et accumsan et 
-iusto odio dignis</h1>
+            <h1 className='sectionText'>The Glenty token, the heart of the Glenty ecosystem. As governance token, not only will it allow you to vote for the future projects, partnerships and the direction we are planning to head towards.
+But you can also stack it and gain interest on it.
+There will be 100’000’000 Glenty Tokens available at launch.
+It could be minted as rewards and will be burned as deflationary mechanism.
+Stack any crypto in the Gigapool and earn Glenty coins as reward.</h1>
           </div>
           <div><img src={glentyImg} style={{width:`${window.innerWidth>865?"70%":"100%"}`}} alt='gigapool' /></div> 
         </Cards>
