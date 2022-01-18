@@ -54,8 +54,11 @@ grid-template-columns: 16% 16% 16% 16% 16% 16%;
   }
   .socialL{
     bottom: 30px;
-    right: 30px;
+    right: 0px;
     position: fixed;
+      grid-template-columns: 45% 45%;
+      grid-column-gap: 5%;
+      grid-row-gap: 20px;
   }
   .socialL div svg,.socialL a svg{
     fill: white;
@@ -658,4 +661,10 @@ color: white;
     .audits{
       padding: 0 !important;
     }
+  }
+  .buttonaddmin{
+    background: transparent !important;
+    border: 1px solid #788cff !important;
+    border-radius: 30px !important;
+    width: 68px !important;
   }

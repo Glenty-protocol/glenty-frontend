@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
   }
   .socialL{
-    display:${document.location.pathname === "/"?"none":"flex"}
+    display:${document.location.pathname === "/"?"none":"grid"}
   }
   input:focus, textarea:focus, select:focus{
     outline: none;

@@ -66,7 +66,7 @@ const Top100 = () => {
           <div><b style={{color: 'white',fontSize: '16pt'}}>Top100 amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>To</div>
-          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-15px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" disabled value={1/(count * (Math.round(top100api/10000000/bnbprice)))} />
+          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-15px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" disabled value={(count /bnbprice)} />
           <img className='top100img' alt="top100 token" src={top100img} style={{width:'35px',marginTop:'40px'}} />
           <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>TOP100</div>
           <br /><br />
@@ -156,7 +156,7 @@ const Top100 = () => {
           <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>Top100 amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>To</div>
-          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-15px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" disabled value={1/(count * (Math.round(top100api/10000000/bnbprice)))} />
+          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-15px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" disabled value={(count /bnbprice)} />
           <img className='top100img' alt="top100 token" src={top100img} style={{width:'35px',marginTop:'40px'}} />
           <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>TOP100</div>
           <br /><br />
