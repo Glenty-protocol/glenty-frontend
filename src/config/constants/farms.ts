@@ -40,7 +40,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TOP100-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x746c3c8c107e7a9f2930f46d860e9001cabf9706',
+      56: '0x342ac74d40ab68617f3afb73bdccacf94c14bfb0',
     },
     token: tokens.top,
     quoteToken: tokens.wbnb,
