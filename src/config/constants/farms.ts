@@ -34,8 +34,17 @@ const farms: FarmConfig[] = [
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 46,
+    lpSymbol: 'TOP100-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x746c3c8c107e7a9f2930f46d860e9001cabf9706',
+    },
+    token: tokens.top,
+    quoteToken: tokens.wbnb,
   }
-
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */
