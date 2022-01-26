@@ -42,7 +42,7 @@ const Top100 = () => {
       </Heading>
       <div style={{padding: '24px', justifyContent: "space-around"}}>
         <div className='top100module'>
-        <div className='buytitle' style={{color:'white'}}>Buy Price: <br />{Math.round(top100api/10000000).toLocaleString().replace(',','’')} USD <br /><span style={{fontSize:'10pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white'}}>Buy Price: <br />{(top100api/1000000000000).toFixed(3).toLocaleString().replace(',','’')} USD <br /><span style={{fontSize:'10pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'150px'}} />
         </div>
         <div className='top100page'>
@@ -111,7 +111,7 @@ const Top100 = () => {
       <div style={{padding: '10px 24px', justifyContent: "space-around"}}>
         <div className='top100module'>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'200px'}} />
-        <div className='buytitle' style={{color:'white'}}><span id='buypricelite'>Buy Price:</span> <br />{Math.round(top100api/10000000).toLocaleString().replace(',','’')} USD <br /> <span style={{fontSize:'14pt'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white'}}><span id='buypricelite'>Buy Price:</span> <br />{(top100api/1000000000000).toFixed(3).toLocaleString().replace(',','’')} USD <br /> <span style={{fontSize:'14pt'}}> {bnbprice} BNB </span></div>
         <div onClick={() => {
           if (account && count > 0) {
             console.log("conf", Abi as AbiItem[], config.buyContractAddressTop100);
