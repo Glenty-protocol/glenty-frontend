@@ -42,14 +42,14 @@ const Top100 = () => {
       </Heading>
       <div style={{padding: '24px', justifyContent: "space-around"}}>
         <div className='top100module'>
-        <div className='buytitle' style={{color:'white'}}>Buy Price: <br />{(top100api/1000000000000).toFixed(3).toLocaleString().replace(',','’')} USD <br /><span style={{fontSize:'10pt',color:'lightgrey'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white'}}>Buy Price: <br />{(top100api/1000000000000).toFixed(3).toLocaleString().replace(',','’')} USD </div>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'150px'}} />
         </div>
         <div className='top100page'>
           <div><b style={{color: 'white',fontSize: '16pt'}}>BNB amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>From</div>
-          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-30px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" />
+          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-30px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" min="0" inputMode="numeric" pattern="[0-9]*" />
           <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/binance-coin-bnb-logo.svg' style={{width:'35px',marginTop:'30px'}} />
           <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>BNB</div>
           <br /><br />
@@ -111,7 +111,7 @@ const Top100 = () => {
       <div style={{padding: '10px 24px', justifyContent: "space-around"}}>
         <div className='top100module'>
         <img className='top100img' alt="top100 token" src={top100img} style={{width:'200px'}} />
-        <div className='buytitle' style={{color:'white'}}><span id='buypricelite'>Buy Price:</span> <br />{(top100api/1000000000000).toFixed(3).toLocaleString().replace(',','’')} USD <br /> <span style={{fontSize:'14pt'}}> {bnbprice} BNB </span></div>
+        <div className='buytitle' style={{color:'white'}}><span id='buypricelite'>Buy Price:</span> <br />{(top100api/1000000000000).toFixed(3).toLocaleString().replace(',','’')} USD </div>
         <div onClick={() => {
           if (account && count > 0) {
             console.log("conf", Abi as AbiItem[], config.buyContractAddressTop100);
@@ -145,7 +145,7 @@ const Top100 = () => {
           <div><b style={{color: 'white',fontSize: '16pt',paddingLeft:'7px'}}>BNB amount</b></div><br />
           <div style={{borderRadius: '24px',display:'flex',flexFlow:'row nowrap',background:'rgb(28 25 81)',height:'100px'}}>
           <div style={{color: "white", marginLeft: "24px", fontSize: "14px", marginTop: "20px" , zIndex: 9}}>From</div>
-          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-30px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" />
+          <input onChange={evt => { setCount(Number(evt.target.value)) }} style={{ borderRadius: '24px',position:'relative',height:"30px", fontSize: '18px', marginLeft: '-30px', width: '100%',background:'rgb(28 25 81)',color:'rgb(239 186 47)',marginTop:'50px'}} placeholder="0" type="number" min="0" inputMode="numeric" pattern="[0-9]*" />
           <img className='top100img' alt="top100 token" src='./images/gigapoolIcons/binance-coin-bnb-logo.svg' style={{width:'35px',marginTop:'30px'}} />
           <div style={{color:'rgb(243, 186, 47)',fontSize:'16px',margin:'60px 24px 0 10px'}}>BNB</div>
           <br /><br />
