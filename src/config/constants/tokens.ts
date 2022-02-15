@@ -18,7 +18,7 @@ const tokens = {
       56: '0xa8a4df11e38c6ef79f65f22fa0a8ae0cc267637b',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
-    decimals: 9,
+    decimals: 18,
     projectLink: 'https://glenty.com/',
   },
     top: {
@@ -27,7 +27,7 @@ const tokens = {
       56: '0xa8a4df11e38c6ef79f65f22fa0a8ae0cc267637b',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
-    decimals: 9,
+    decimals: 18,
     projectLink: 'https://glenty.com/',
   },
   txl: {
