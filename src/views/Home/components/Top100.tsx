@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Card, CardBody, Heading, Text,ArrowDownIcon, IconButton } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
@@ -13,24 +13,32 @@ import top100img from './top100.svg'
 const config = {
   buyContractAddressTop100: "0x7475E30e90ff55d627cAdfcb4e869d7d203B1b98"
 }
-let top100api = 0
-let bnbprice = 1
-fetch('https://cap.glenty.com/marketcap')          
-.then(res=>res.json())
-.then(dataapi=>
-  top100api = dataapi.market_cap
-)
-fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd')          
-.then(res=>res.json())
-.then(binprice=>
-  bnbprice = binprice.binancecoin.usd
-)
+
+
 const Top100 = () => {
   const { t } = useTranslation()
   const { toastError, toastSuccess } = useToast()
   const [count, setCount] = useState(0);
+  const [top100api, setTop] = useState(0);
+  const [bnbprice, setBnb] = useState(0);
   const { account } = useWeb3React();
   const web3 = useWeb3();
+
+  useEffect(()=>{
+    function fetchData(){
+      fetch('https://cap.glenty.com/marketcap')          
+      .then(res=>res.json())
+      .then(dataapi=>
+        setTop(dataapi.market_cap)
+)
+      fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd')          
+      .then(res=>res.json())
+      .then(binprice=>
+        setBnb(binprice.binancecoin.usd)
+)
+fetchData()
+}
+  })
 
   return (
     <>

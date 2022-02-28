@@ -4,11 +4,11 @@ window.onload = ()=>{
   document.querySelector('a').addEventListener('click',function(){
     window.location.replace('https://glenty.com')
   })
-  if(document.location.pathname === "/"){
+  /*if(document.location.pathname === "/"){
   const autoClick = document.querySelector('.slick-next');
   setInterval(() => {
     autoClick.click();
-  }, 3000);}
+  }, 3000);}*/
  
   if(window.location.href.includes('/top100')){
     document.querySelector('#root').style.backgroundRepeat= 'no-repeat'
@@ -29,6 +29,8 @@ window.onload = ()=>{
 
     } else {
       document.querySelector('nav').style.background = "none";
+      document.querySelector('nav').style.paddingBottom = "unset";
+      document.querySelector('nav').style.paddingTop = "unset";
     }
   }
   
@@ -99,7 +101,6 @@ window.onload = ()=>{
    heade.appendChild(docs)
 
    document.querySelector('nav').querySelector('img').src='./images/GLENTY_WHITE_LOGO.png';
-   document.querySelector('nav').querySelector('img').parentElement.style.height = '155%';
    document.querySelector('nav').querySelector('img').parentElement.parentElement.style.width='9%';
    document.querySelector('nav').querySelector('img').parentElement.parentElement.style.height='90%';
 
@@ -136,7 +137,6 @@ function mobileC(){
   logoM.classList.add('logo-phone')
   logoM.style.height='70%';
   logoM.style.width='110px';
-  logoM.style.marginTop='10px';
   setTimeout(document.querySelector('nav button').click(), 3000);
   setTimeout(  document.querySelector('nav button').remove(), 3500);
   window.onscroll = function() {hideNav()};
