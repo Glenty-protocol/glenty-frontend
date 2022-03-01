@@ -26,11 +26,13 @@ window.onload = ()=>{
       document.querySelector('nav').style.background = "url('./images/Fichier 8.svg')";
       document.querySelector('nav').style.paddingBottom = "75px";
       document.querySelector('nav').style.paddingTop = "50px";
+      document.querySelector('nav a[aria-label="Pancake home page"]').style.marginTop = 'unset';
 
     } else {
       document.querySelector('nav').style.background = "none";
       document.querySelector('nav').style.paddingBottom = "unset";
       document.querySelector('nav').style.paddingTop = "unset";
+      document.querySelector('nav a[aria-label="Pancake home page"]').style.marginTop = '20px';
     }
   }
   

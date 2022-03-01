@@ -26,7 +26,7 @@ nav{
   .header-grid{
 width: 50%;
 display: grid;
-text-align: left;
+text-align: center;
 align-items: center;
 grid-template-columns: 16% 16% 16% 16% 16% 16%;
   }
