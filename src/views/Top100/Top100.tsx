@@ -6,22 +6,22 @@ import Top100 from 'views/Home/components/Top100'
 const Top1: React.FC = () => {
   const [dataCoin,setDataCoin] = useState([]);
   const [marketcaptotal,setMarketCap] = useState(0);
+  
   useEffect(()=>{
+
   const fetchTop100 = async ()=>{
     await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')          
     .then(res=>res.json())
-    .then(data=>{
-      setDataCoin(data);
-  }
-)
-await fetch('https://cap.glenty.com/marketcap')          
-.then(res=>res.json())
-.then(dataapi=>{
-  setMarketCap(dataapi.market_cap);
-  }
-)}
+    .then(data=>{setDataCoin(data);})
+
+    await fetch('https://cap.glenty.com/marketcap',{mode:'no-cors'})          
+    .then(res=>res.json())
+    .then(dataapi=>{setMarketCap(dataapi.market_cap);})
+}
+
 fetchTop100();
-},[dataCoin,marketcaptotal])
+
+},[])
   return (
     <Page className='TopPage' style={{paddingBottom:'8%'}}>
         <div className='Topgrid'>
