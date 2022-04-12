@@ -1,7 +1,6 @@
 /* eslint-disable */
-import React, { useState, useEffect } from 'react'
-import { Card, CardBody, Heading, Text,ArrowDownIcon, IconButton } from '@pancakeswap/uikit'
-import styled from 'styled-components'
+import { useState, useEffect } from 'react'
+import { Heading, ArrowDownIcon, IconButton } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useWeb3 from 'hooks/useWeb3'
 import { useWeb3React } from '@web3-react/core'
@@ -38,6 +37,7 @@ const Top100 = () => {
       fetch('https://coinpaprika1.p.rapidapi.com/global', options)          
       .then(res=>res.json())
       .then(dataapi=>setTop(dataapi.market_cap_usd))
+      console.log(options)
 
       fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd')          
       .then(res=>res.json())
