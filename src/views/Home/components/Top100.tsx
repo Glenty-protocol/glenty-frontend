@@ -37,7 +37,6 @@ const Top100 = () => {
       fetch('https://coinpaprika1.p.rapidapi.com/global', options)          
       .then(res=>res.json())
       .then(dataapi=>setTop(dataapi.market_cap_usd))
-      console.log(options)
 
       fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd')          
       .then(res=>res.json())
