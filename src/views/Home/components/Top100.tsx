@@ -25,20 +25,28 @@ const Top100 = () => {
   const web3 = useWeb3();
 
   useEffect(()=>{
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Host': 'coinpaprika1.p.rapidapi.com',
+        'X-RapidAPI-Key': '4b1247bc30msh1b68b3bf944981ap123a02jsn5bc23292bfe2'
+      }
+    };
+
+  
     function fetchData(){
-      fetch('https://cap.glenty.com/marketcap')          
+      fetch('https://coinpaprika1.p.rapidapi.com/global', options)          
       .then(res=>res.json())
-      .then(dataapi=>
-        setTop(dataapi.market_cap)
-)
+      .then(dataapi=>setTop(dataapi.market_cap_usd))
+
       fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd')          
       .then(res=>res.json())
-      .then(binprice=>
-        setBnb(binprice.binancecoin.usd)
-)
+      .then(binprice=>setBnb(binprice.binancecoin.usd))
+    }
+
 fetchData()
-}
-  })
+
+  },[])
 
   return (
     <>

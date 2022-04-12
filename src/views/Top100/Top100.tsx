@@ -10,13 +10,21 @@ const Top1: React.FC = () => {
   useEffect(()=>{
 
   const fetchTop100 = async ()=>{
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Host': 'coinpaprika1.p.rapidapi.com',
+        'X-RapidAPI-Key': '4b1247bc30msh1b68b3bf944981ap123a02jsn5bc23292bfe2'
+      }
+    };
+
     await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')          
     .then(res=>res.json())
     .then(data=>{setDataCoin(data);})
 
-    await fetch('https://cap.glenty.com/marketcap',{mode:'no-cors'})          
+    await fetch('https://coinpaprika1.p.rapidapi.com/global', options)          
     .then(res=>res.json())
-    .then(dataapi=>{setMarketCap(dataapi.market_cap);})
+    .then(dataapi=>{setMarketCap(dataapi.market_cap_usd);})
 }
 
 fetchTop100();
