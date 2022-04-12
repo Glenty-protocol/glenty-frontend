@@ -14,7 +14,7 @@ const Top1: React.FC = () => {
       method: 'GET',
       headers: {
         'X-RapidAPI-Host': 'coinpaprika1.p.rapidapi.com',
-        'X-RapidAPI-Key': '4b1247bc30msh1b68b3bf944981ap123a02jsn5bc23292bfe2'
+        'X-RapidAPI-Key': `${process.env.REACT_APP_API_MARKETCAP}`
       }
     };
 
